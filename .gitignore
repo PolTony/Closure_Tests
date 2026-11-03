@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+robustness_tools/
+compiled_tools_llm/
+dynamics_tools/
+archive_boundary_tools/
+bumping_tools/
+sourced_tools/
+occupation_compiler_tools/
+.DS_Store
+~$*
+build/
+dist/
+*.egg-info/
+
+# Correspondence is stored outside the research repository.
+[Ss]ubmission/*[Cc]over*[Ll]etter*

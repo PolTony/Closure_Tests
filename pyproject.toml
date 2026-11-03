@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "juri-lab"
+version = "0.4.0"
+description = "Computational laboratory for professional work, automation, and expertise"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+llm = ["anthropic>=1.0"]
+figures = ["matplotlib>=3.7", "python-docx>=1.1"]
+
+[project.scripts]
+juri-lab = "juri_paths:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+    "build_docx",
+    "compiler_agent",
+    "domain_cases",
+    "juri_paths",
+    "labor_market",
+    "llm_agents",
+    "make_figures",
+    "model_config",
+    "negotiated_order_lab",
+    "occupation_compiler",
+    "profession",
+    "propose_corpus",
+    "reproduce",
+    "run_anomaly_detection",
+    "run_archive_boundary",
+    "run_bumping",
+    "run_closure_formation",
+    "run_dynamics",
+    "run_diagnostics_summary",
+    "run_knowledge_summary",
+    "run_lever_summary",
+    "run_live_benchmark",
+    "run_llm_arm",
+    "run_llm_provenance",
+    "run_moments",
+    "run_robustness_suite",
+    "run_sourced_calibration",
+    "run_structural_challenge",
+    "run_validation_ladder",
+]
+packages = ["juri_lab_resources"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+juri_lab_resources = ["data_inputs/*", "data_inputs/**/*", "reproduce/*", "data_outputs/*.jsonl", "submission/*.docx", "docs/*.md", "tests/*.py", "README.md", "pyproject.toml"]
