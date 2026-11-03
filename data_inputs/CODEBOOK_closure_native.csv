@@ -1,0 +1,7 @@
+column,definition,source
+soc2018 / occ_title,SOC 2018 detailed code and title,BLS OEWS May 2024
+oews_emp_YYYY / oews_h_median_YYYY,"employment and median hourly wage of the detailed code (2019 blank where the code did not exist yet, e.g. 15-1253)","BLS OEWS national, May 2019 / May 2024"
+wage_ratio_to_all_occ_median_YYYY,code median / all-occupations median,BLS OEWS national
+carollo_lic_share_2019_code,share of 51 jurisdictions licensing this exact code (Carollo workbooks are keyed by code; blank = no workbook),Carollo et al. (2025)
+"*_22, accountability_z_native22, degree_automation_22",the five accountability items and their z-index computed at the native SOC-2018 code (separates e.g. nurse practitioners from registered nurses),"O*NET 27.0 (August 2022, SOC-2018 taxonomy, before widespread generative-AI adoption) Work Context"
+"unit, unit_n_members, *_unit","the harmonized unit that holds the code and unit-level values for measures that exist only at that level (CPS, union, Carollo listed units)",see CODEBOOK_closure_units.csv

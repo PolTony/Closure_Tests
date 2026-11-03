@@ -1,0 +1,132 @@
+{
+ "soc2018": "29-1215",
+ "occ_title": "Family Medicine Physicians",
+ "provider": "anthropic",
+ "family": "FAMMED",
+ "validated": true,
+ "problems": [],
+ "validated_by": "",
+ "draft": {
+  "family": "FAMMED",
+  "quantities": {
+   "V1": "planned daily maintenance dose of the prescribed medication (mg)",
+   "V2": "pretest probability from the diagnostic workup (fraction, e.g. lab/imaging-derived risk)",
+   "V3": "titration step size for dose adjustment (mg)",
+   "V4": "patient body weight (lb) used for weight-based adjustment",
+   "ANNEX_SEVERITY": "severity of the documented contraindication, interaction or adverse-event flag in the chart annex"
+  },
+  "lets": [
+   [
+    "weight_share",
+    "V4 / (V1 + V4)"
+   ],
+   [
+    "base_dose",
+    "V1 * (0.65 + 0.35 * weight_share)"
+   ]
+  ],
+  "tier1_rule": [
+   "FAMMED_DOCUMENTED_CONTRAINDICATION_STEPDOWN",
+   "base_dose * (1 - 0.38 * ANNEX_SEVERITY) - 1.15 * V3"
+  ],
+  "breach_rule": [
+   "FAMMED_RISK_ADJUSTED_PRESCRIBING",
+   "base_dose * (1 - 0.40 * V2) + 0.40 * V3"
+  ],
+  "base_rule": [
+   "FAMMED_STANDARD_TITRATION_PROTOCOL",
+   "base_dose + 0.30 * V3"
+  ],
+  "tier2_rule": [
+   "FAMMED_PIECEWISE_PRETEST_DEESCALATION",
+   "base_dose * (1 - (0.46 IF V2 >= 0.15 ELSE 0.32) * SEV) - 1.20 * V3 + 0.10 * V4"
+  ],
+  "tier3_lets": [
+   [
+    "eff_sev",
+    "SEV * (1 + REG.referral_escalation_mult * V2)"
+   ]
+  ],
+  "tier3_rule": [
+   "FAMMED_SPECIALIST_REFERRAL_HANDOFF_ADJUSTMENT",
+   "base_dose * (1 - REG.specialist_dose_reduction_rate * eff_sev) - REG.handoff_washout_factor * REG.referral_escalation_mult * V3"
+  ],
+  "registry": [
+   {
+    "name": "referral_escalation_mult",
+    "value": 1.36
+   },
+   {
+    "name": "specialist_dose_reduction_rate",
+    "value": 0.41
+   },
+   {
+    "name": "handoff_washout_factor",
+    "value": 1.27
+   }
+  ],
+  "rationale": "The treatment computed is a dose, which is the core prescribing task. The base dose blends the planned daily dose with a body-weight share. The standard protocol adds one titration step. The published risk-adjusted rule scales the dose down by the pretest probability from ordered and interpreted tests. The explicit-contraindication rule steps the dose down by the severity of the documented flag and removes one titration step. The unwritten convention is a de-escalation that clinicians apply more aggressively once the pretest probability reaches about 15%. It also takes back a little more than one titration step and restores a small weight-based amount. The precedent rule covers referral to a specialist: the effective severity grows with the diagnostic probability, and the registry constants set the escalation, the reduction rate and the washout during the handoff. These constants reflect earlier resolved referral cases."
+ },
+ "evaluation": [
+  {
+   "soc2018": "29-1215",
+   "occ_title": "Family Medicine Physicians",
+   "family": "FAMMED",
+   "task_id": "FAM-C1",
+   "ring": "Inner_Core",
+   "A_Base_Pct": 5.0,
+   "A_Tool_v1_Pct": 30.0,
+   "A_Tool_v2_Pct": 45.0,
+   "A_Tool_v3_Pct": 55.0,
+   "A_Inc_Solo_Pct": 90.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 0.0,
+   "Accountability_Settlement_Pct": 65.0,
+   "Incumbent_Gatekeeping_Pct": 35.0,
+   "SQ_Error_Rate_Pct": 5.0,
+   "CF1_Dereg_Error_Pct": 15.0,
+   "v2_handler_template": "G1_mult_severity",
+   "v3_split": "V2>=0.1377"
+  },
+  {
+   "soc2018": "29-1215",
+   "occ_title": "Family Medicine Physicians",
+   "family": "FAMMED",
+   "task_id": "FAM-B2",
+   "ring": "Middle_Buffer",
+   "A_Base_Pct": 45.0,
+   "A_Tool_v1_Pct": 70.0,
+   "A_Tool_v2_Pct": 80.0,
+   "A_Tool_v3_Pct": 95.0,
+   "A_Inc_Solo_Pct": 85.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 0.0,
+   "Accountability_Settlement_Pct": 95.0,
+   "Incumbent_Gatekeeping_Pct": 5.0,
+   "SQ_Error_Rate_Pct": 0.0,
+   "CF1_Dereg_Error_Pct": 0.0,
+   "v2_handler_template": "G1_mult_severity",
+   "v3_split": "V2>=0.1348"
+  },
+  {
+   "soc2018": "29-1215",
+   "occ_title": "Family Medicine Physicians",
+   "family": "FAMMED",
+   "task_id": "FAM-P3",
+   "ring": "Outer_Periphery",
+   "A_Base_Pct": 40.0,
+   "A_Tool_v1_Pct": 95.0,
+   "A_Tool_v2_Pct": 95.0,
+   "A_Tool_v3_Pct": 95.0,
+   "A_Inc_Solo_Pct": 95.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 85.0,
+   "Accountability_Settlement_Pct": 10.0,
+   "Incumbent_Gatekeeping_Pct": 5.0,
+   "SQ_Error_Rate_Pct": 0.0,
+   "CF1_Dereg_Error_Pct": 0.0,
+   "v2_handler_template": "",
+   "v3_split": ""
+  }
+ ]
+}

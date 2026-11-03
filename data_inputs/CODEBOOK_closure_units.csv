@@ -1,0 +1,23 @@
+column,definition,"source (dataset, vintage)"
+unit,harmonized occupation unit (connected component of the BLS SOC 2000/2010/2018 crosswalks); id = its lead SOC-2018 code,"this project, Script 110"
+unit_members_soc2018,SOC-2018 detailed codes inside the unit,BLS SOC 2018
+lic_carollo_2019 / lic_carollo_2000,"share of the 51 jurisdictions whose statute licenses the occupation (practice or title act with state agency and qualifications), 2019 / 2000; unlisted occupations = 0","Carollo, Hicks, Karch & Kleiner (2025), NBER WP 33580 state statute data"
+lic_carollo_practice,practice-restricting share among listed units,Carollo et al. (2025)
+pr_complete_share / pr_partial_share / title_only_share,share of states (of 51) whose latest act by 2019 fully restricts practice / partly restricts practice / protects the title only,"Carollo et al. (2025) policy workbooks, coded in Script 631"
+lic_cps_1519,"share of employed 18–64 holding an active government-issued license (PROFCERT=yes & STATECERT=yes), 2015–19, bridge-weighted, n ≥ 30","IPUMS CPS monthly basic, 2015–2019"
+cert_only_cps_1519 / cert_req_cps_1519 / cert_vol_cps_1519,certification without a license; required for the job; not required,IPUMS CPS 2015–2019
+"union_hm_1719 (also _0304, _2425)",union coverage rate,"Hirsch & Macpherson unionstats.com, 2017–19"
+union_all/priv/pub_cps_1519,"union coverage from CPS outgoing rotation groups, all / private / public",IPUMS CPS 2015–2019
+gov_share_cps_1519,share employed in government,IPUMS CPS 2015–2019
+ba_onet_2005 / ba_onet_2019,incumbent-reported share with a bachelor's degree or more,"O*NET 10.0 (2005) / 24.0 (2019) Education, Training & Experience"
+cert_importance_onet_2024,importance of certification (post-treatment snapshot),O*NET 28.3
+assoc_count_2025 / ln_assoc_2025,"number of national professional associations listed (count, not membership)","CareerOneStop Professional Associations directory, 2025"
+signoff_handcoded,"1 if the unit contains a profession whose core work requires a licensed signature, prescription, filing or certification (62 SOC codes; author's hand coding, not a statute; see 03_results/b_signoff)","this project, Script 606 SIGNOFF list"
+accountability_z,"mean of z-scores of five work-context items (consequence of error 4.C.3.a.1; impact of decisions 4.C.3.a.2.a; frequency of decisions 4.C.3.a.2.b; responsibility for outcomes 4.C.1.c.2; responsibility for others' health and safety 4.C.1.c.1), re-standardized across units","O*NET 24.0 (August 2019) Work Context, Script 487"
+conseq_error_19 … safety_others_19,the five items (CX scale 1–5),O*NET 24.0 Work Context
+autom_19 / autom_26 / d_autom_1926 / wc_rerated_1926,"Degree of Automation (4.C.3.b.2, CX 1–5) in 2019 and 2026 and its change; 1 if the unit's work context was re-rated between releases (changes are meaningful only where 1)",O*NET 24.0 (Aug 2019) and 31.0 (2026) Work Context
+E_g,"capability-crossing generative-AI exposure, 2025 value (share of skill-weighted task content AI can perform)","this project, Scripts 594b/595"
+telework / computers,Dingel–Neiman teleworkability; importance of working with computers (4.A.3.b.1),Dingel & Neiman (2020); O*NET 24.0
+oews_emp_YYYY / oews_h_median_YYYY,employment and employment-weighted mean of member codes' median hourly wage,"BLS OEWS national, May 2019 and May 2024"
+wage_ratio_to_all_occ_median_YYYY,unit median hourly wage / all-occupations median hourly wage of the same year,"BLS OEWS national, May 2019 / May 2024"
+kw,"knowledge-work domain flag (job zone ≥ 3 in SOC 11–29, or job zone ≥ 4)",this project

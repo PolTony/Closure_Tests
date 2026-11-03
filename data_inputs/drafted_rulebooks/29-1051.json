@@ -1,0 +1,132 @@
+{
+ "soc2018": "29-1051",
+ "occ_title": "Pharmacists",
+ "provider": "anthropic",
+ "family": "PHARMACY",
+ "validated": true,
+ "problems": [],
+ "validated_by": "",
+ "draft": {
+  "family": "PHARMACY",
+  "quantities": {
+   "V1": "prescribed dispensing quantity to verify (units or mL ordered on the prescription or infusion order)",
+   "V2": "controlled-substance count discrepancy ratio (perpetual inventory versus physical count)",
+   "V3": "sterile preparation overfill and waste volume (mL discarded during compounding)",
+   "V4": "compounding schedule parameter (beyond-use dating window in hours for the stock solution)",
+   "ANNEX_SEVERITY": "severity of the annex exception (drug-interaction or allergy alert flagged in the patient profile)"
+  },
+  "lets": [
+   [
+    "stability_weight",
+    "V4 / (V1 + V4)"
+   ],
+   [
+    "verified_qty",
+    "V1 * (0.70 + 0.30 * stability_weight)"
+   ]
+  ],
+  "tier1_rule": [
+   "PHARMACY_EXPLICIT_ALLERGY_INTERACTION_HOLD",
+   "verified_qty * (1 - 0.35 * ANNEX_SEVERITY) - 1.10 * V3"
+  ],
+  "breach_rule": [
+   "PHARMACY_CONTROLLED_COUNT_DISCREPANCY_ADJUSTMENT",
+   "verified_qty * (1 - 0.45 * V2) + 0.35 * V3"
+  ],
+  "base_rule": [
+   "PHARMACY_ROUTINE_PRESCRIPTION_VERIFICATION",
+   "verified_qty + 0.25 * V3"
+  ],
+  "tier2_rule": [
+   "PHARMACY_PIECEWISE_STERILE_OVERFILL_DISCARD",
+   "verified_qty * (1 - (0.46 IF V2 >= 0.14 ELSE 0.31) * SEV) - 1.20 * V3 + 0.08 * V4"
+  ],
+  "tier3_lets": [
+   [
+    "eff_sev",
+    "SEV * (1 + REG.narcotic_diversion_mult * V2)"
+   ]
+  ],
+  "tier3_rule": [
+   "PHARMACY_SCHEDULE_II_DIVERSION_QUARANTINE",
+   "verified_qty * (1 - REG.beyond_use_discard_rate * eff_sev) - REG.reconciliation_penalty * REG.narcotic_diversion_mult * V3"
+  ],
+  "registry": [
+   {
+    "name": "narcotic_diversion_mult",
+    "value": 1.37
+   },
+   {
+    "name": "beyond_use_discard_rate",
+    "value": 0.41
+   },
+   {
+    "name": "reconciliation_penalty",
+    "value": 1.28
+   }
+  ],
+  "rationale": "A pharmacy case file centres on the quantity ordered on a prescription or infusion order (V1). It also holds the controlled-drug register discrepancy found during record keeping (V2), the overfill and waste generated while compounding sterile solutions (V3), and the beyond-use dating window of the stock solution (V4). The verified quantity blends the order with its stability window. The public rules cover a routine verification, an explicit allergy or interaction hold scaled by the profile alert severity, and a count-discrepancy adjustment. The unwritten convention: once the narcotic count discrepancy reaches about 14 percent, practitioners discard sterile overfill more aggressively in proportion to alert severity, still crediting the stability window. The precedent rule quarantines Schedule II stock when diversion is suspected. There, alert severity is amplified by the discrepancy ratio, and private constants set the discard rate and the reconciliation penalty."
+ },
+ "evaluation": [
+  {
+   "soc2018": "29-1051",
+   "occ_title": "Pharmacists",
+   "family": "PHARMACY",
+   "task_id": "PHA-C1",
+   "ring": "Inner_Core",
+   "A_Base_Pct": 10.0,
+   "A_Tool_v1_Pct": 30.0,
+   "A_Tool_v2_Pct": 45.0,
+   "A_Tool_v3_Pct": 55.0,
+   "A_Inc_Solo_Pct": 90.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 0.0,
+   "Accountability_Settlement_Pct": 65.0,
+   "Incumbent_Gatekeeping_Pct": 35.0,
+   "SQ_Error_Rate_Pct": 0.0,
+   "CF1_Dereg_Error_Pct": 10.0,
+   "v2_handler_template": "G1_mult_severity",
+   "v3_split": "V2>=0.1421"
+  },
+  {
+   "soc2018": "29-1051",
+   "occ_title": "Pharmacists",
+   "family": "PHARMACY",
+   "task_id": "PHA-B2",
+   "ring": "Middle_Buffer",
+   "A_Base_Pct": 40.0,
+   "A_Tool_v1_Pct": 70.0,
+   "A_Tool_v2_Pct": 85.0,
+   "A_Tool_v3_Pct": 95.0,
+   "A_Inc_Solo_Pct": 85.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 0.0,
+   "Accountability_Settlement_Pct": 95.0,
+   "Incumbent_Gatekeeping_Pct": 5.0,
+   "SQ_Error_Rate_Pct": 5.0,
+   "CF1_Dereg_Error_Pct": 5.0,
+   "v2_handler_template": "G1_mult_severity",
+   "v3_split": "V2>=0.1392"
+  },
+  {
+   "soc2018": "29-1051",
+   "occ_title": "Pharmacists",
+   "family": "PHARMACY",
+   "task_id": "PHA-P3",
+   "ring": "Outer_Periphery",
+   "A_Base_Pct": 60.0,
+   "A_Tool_v1_Pct": 95.0,
+   "A_Tool_v2_Pct": 95.0,
+   "A_Tool_v3_Pct": 95.0,
+   "A_Inc_Solo_Pct": 90.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 85.0,
+   "Accountability_Settlement_Pct": 10.0,
+   "Incumbent_Gatekeeping_Pct": 5.0,
+   "SQ_Error_Rate_Pct": 0.0,
+   "CF1_Dereg_Error_Pct": 0.0,
+   "v2_handler_template": "",
+   "v3_split": ""
+  }
+ ]
+}

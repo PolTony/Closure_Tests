@@ -1,0 +1,132 @@
+{
+ "soc2018": "29-1021",
+ "occ_title": "Dentists, General",
+ "provider": "anthropic",
+ "family": "DENTAL",
+ "validated": true,
+ "problems": [],
+ "validated_by": "",
+ "draft": {
+  "family": "DENTAL",
+  "quantities": {
+   "V1": "prosthodontic case fee for the appliance (bridge, denture or space maintainer), in dollars",
+   "V2": "patient caries/periodontal risk ratio from the preventive-care chart (expected remake or failure fraction)",
+   "V3": "lab adjustment and chair-time cost for fitting and re-fitting the appliance, in dollars",
+   "V4": "schedule parameter (insurer allowable fee basis for the procedure code)",
+   "ANNEX_SEVERITY": "severity of the clinical annex exception (infection-control incident or contraindicating oral-health finding)"
+  },
+  "lets": [
+   [
+    "allowable_weight",
+    "V4 / (V1 + V4)"
+   ],
+   [
+    "billed_fee",
+    "V1 * (0.62 + 0.38 * allowable_weight)"
+   ]
+  ],
+  "tier1_rule": [
+   "DENTAL_EXPLICIT_INFECTION_CONTROL_HOLD",
+   "billed_fee * (1 - 0.36 * ANNEX_SEVERITY) - 1.10 * V3"
+  ],
+  "breach_rule": [
+   "DENTAL_PROSTHESIS_REMAKE_WARRANTY",
+   "billed_fee * (1 - 0.42 * V2) + 0.35 * V3"
+  ],
+  "base_rule": [
+   "DENTAL_STANDARD_FITTING_FEE",
+   "billed_fee + 0.28 * V3"
+  ],
+  "tier2_rule": [
+   "DENTAL_PIECEWISE_HIGH_RISK_PREVENTIVE_ADJUSTMENT",
+   "billed_fee * (1 - (0.46 IF V2 >= 0.14 ELSE 0.30) * SEV) - 1.20 * V3 + 0.08 * V4"
+  ],
+  "tier3_lets": [
+   [
+    "eff_sev",
+    "SEV * (1 + REG.periodontal_failure_mult * V2)"
+   ]
+  ],
+  "tier3_rule": [
+   "DENTAL_PERIODONTAL_FAILURE_LAB_CHARGEBACK",
+   "billed_fee * (1 - REG.remake_writeoff_rate * eff_sev) - REG.lab_chargeback * REG.periodontal_failure_mult * V3"
+  ],
+  "registry": [
+   {
+    "name": "periodontal_failure_mult",
+    "value": 1.38
+   },
+   {
+    "name": "remake_writeoff_rate",
+    "value": 0.41
+   },
+   {
+    "name": "lab_chargeback",
+    "value": 1.27
+   }
+  ],
+  "rationale": "A general dentist's case file for a prosthodontic appliance centres on the case fee (V1), blended with the insurer allowable (V4) to give a billed fee, plus lab and chair-time fitting costs (V3). The patient's caries/periodontal risk ratio (V2) comes from the preventive-care advice task and drives remake risk. The annex severity captures an infection-control incident or contraindicating finding. The handbook prints the following rules: a standard fitting fee, a remake-warranty reduction proportional to risk, and an explicit hold that discounts the fee when an infection-control or clinical exception is documented. The unwritten convention is that practitioners discount more steeply for high-risk patients (risk ratio of 14% or above) when an exception is present, absorbing extra fitting cost and crediting part of the allowable. The precedent covers periodontal failure: severity is amplified by risk through a private failure multiplier, with a registry write-off rate and a lab chargeback applied to fitting costs."
+ },
+ "evaluation": [
+  {
+   "soc2018": "29-1021",
+   "occ_title": "Dentists, General",
+   "family": "DENTAL",
+   "task_id": "DEN-C1",
+   "ring": "Inner_Core",
+   "A_Base_Pct": 10.0,
+   "A_Tool_v1_Pct": 30.0,
+   "A_Tool_v2_Pct": 40.0,
+   "A_Tool_v3_Pct": 50.0,
+   "A_Inc_Solo_Pct": 90.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 0.0,
+   "Accountability_Settlement_Pct": 65.0,
+   "Incumbent_Gatekeeping_Pct": 35.0,
+   "SQ_Error_Rate_Pct": 5.0,
+   "CF1_Dereg_Error_Pct": 15.0,
+   "v2_handler_template": "G1_mult_severity",
+   "v3_split": "V2>=0.1257"
+  },
+  {
+   "soc2018": "29-1021",
+   "occ_title": "Dentists, General",
+   "family": "DENTAL",
+   "task_id": "DEN-B2",
+   "ring": "Middle_Buffer",
+   "A_Base_Pct": 45.0,
+   "A_Tool_v1_Pct": 70.0,
+   "A_Tool_v2_Pct": 75.0,
+   "A_Tool_v3_Pct": 95.0,
+   "A_Inc_Solo_Pct": 95.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 0.0,
+   "Accountability_Settlement_Pct": 95.0,
+   "Incumbent_Gatekeeping_Pct": 5.0,
+   "SQ_Error_Rate_Pct": 0.0,
+   "CF1_Dereg_Error_Pct": 0.0,
+   "v2_handler_template": "G1_mult_severity",
+   "v3_split": "V2>=0.1286"
+  },
+  {
+   "soc2018": "29-1021",
+   "occ_title": "Dentists, General",
+   "family": "DENTAL",
+   "task_id": "DEN-P3",
+   "ring": "Outer_Periphery",
+   "A_Base_Pct": 50.0,
+   "A_Tool_v1_Pct": 95.0,
+   "A_Tool_v2_Pct": 95.0,
+   "A_Tool_v3_Pct": 95.0,
+   "A_Inc_Solo_Pct": 85.0,
+   "A_Collab_Pct": 100.0,
+   "Direct_Poaching_Pct": 85.0,
+   "Accountability_Settlement_Pct": 10.0,
+   "Incumbent_Gatekeeping_Pct": 5.0,
+   "SQ_Error_Rate_Pct": 0.0,
+   "CF1_Dereg_Error_Pct": 0.0,
+   "v2_handler_template": "",
+   "v3_split": ""
+  }
+ ]
+}

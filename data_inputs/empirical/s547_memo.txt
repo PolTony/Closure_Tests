@@ -1,0 +1,161 @@
+STRENGTHENED G1: is formal sign-off done with AI less than equally capable tasks in the same occupation?
+Scripts 546 (classifier) and 547 (test). Run 2026-10-26. Notes: research_notes/v12_plan_2026-10/gates/S_strengthen_notes.md
+
+VERDICT (pre-specified): PARTIAL.
+  Massenkoff        b = -0.0592 (SE 0.0120), t -4.95, wild-bootstrap p .010, -73% of the same occupations' non-sign-off mean
+  AEI Jun-2026      b = -0.00248 (SE 0.00146), t -1.70, wild-bootstrap p .089, -53%
+  The rule needs b < 0 with |t| >= 2 on both outcomes. Massenkoff meets it. AEI June 2026 has the right sign and a large
+  relative gap, but misses the t threshold.
+
+TRANSPARENCY
+  - I chose the narrow construct (Q1, formal sign-off) after the first G1 run (Script 541). In that run the broad answerability
+    dictionary passed on Massenkoff only, and the STRICT sign/certify/approve/authorize/attest/prescribe dictionary passed on
+    both platforms. This is therefore a confirmatory re-test of a construct selected on G1 data. It is not a fresh
+    pre-registration.
+  - Fixed before any outcome regression with the new label: the label, the threshold rule, the specification, the outcomes
+    and the verdict rule.
+  - The training labels are LANGUAGE-MODEL codes (this agent, reading 2,000 statements blind to stratum and dictionary flags).
+    They are not human codes.
+
+------------------------------------------------------------------------------------------------------------------------------
+1. PRIMARY TABLE
+   Specification: y ~ Q1 + Althoff automatable_genai + augmentation_genai + Core + importance + relevance | O*NET-SOC FE;
+   SOC-3 clustered SEs; wild cluster bootstrap (Rademacher, 999 draws, null imposed).
+   Q1 = classifier label at the threshold chosen before any outcome regression (0.44).
+   Sample: 16,164 O*NET 27.0 tasks with all controls, of which 144 are Q1 tasks in 94 occupations.
+
+   Outcome                                       b          SE       t      boot-p  N       occ  contrib  clusters  base    rel
+   Massenkoff penetration [0,1]              -0.05923   0.01198  -4.95   .010   16,164   820    94      93      .0811  -73%
+   AEI Jun-2026 Claude.ai share (%), USA     -0.00248   0.00146  -1.70   .089    9,176   459    72      86      .0047  -53%
+
+   "contrib" = occupations with both Q1 and non-Q1 tasks. "base" = mean use of non-Q1 tasks in occupations that have a Q1 task.
+
+   Outcome matching and coverage:
+     - Massenkoff: 100% of 27.0 rows.
+     - AEI June 2026: Task ID carried to 27.0 where the 31.0 text is identical. This covers 99.3% of nodes and 97.8% of usage;
+       8.7% of 27.0 rows are listed.
+     - Both outcomes are identical to the Script 541 panel.
+
+2. SECONDARY TABLE (no bootstrap unless stated; same controls, fixed effects and clusters)
+   Q1 label, other outcomes                       b          t      rel
+     AEI Jun-2026 any use (listed)            -0.0653    -2.23    -66%
+     Massenkoff any penetration               -0.0698    -5.25    -75%
+     AEI Aug-2025 consumer, US (20.1-matched) -0.00492   -2.25    -77%
+     AEI Nov-2025 consumer, US                -0.00508   -3.48    -77%
+     AEI Feb-2026 consumer, US                -0.00429   -3.08    -65%
+     AEI Aug/Nov/Feb pooled mean              -0.00420   -2.94    -72%      (any use: -76%, t -7.70)
+     AEI Jun-2026 first-party API (GLOBAL)    -0.00382   -1.87    -72%      (any use: -31%, t -1.14)
+   Continuous p_q1: the same pattern on every outcome (Massenkoff t -4.74; AEI Jun-2026 t -1.77; the three waves t -2.4 to -3.5).
+   Matching for the earlier waves: AEI text matches O*NET 20.1 100%; carried to 27.0 by Task ID for 83% of texts (81-82% of
+   usage). June-2026 API: 99.4% of nodes (99.0% of usage).
+
+   Q2 (binding decision for others), 533 tasks:
+     Massenkoff +0.075 (SE 0.092, t +0.82, boot .81)
+     AEI Jun-2026 -58% (t -1.71, boot .10)
+     The earlier consumer waves are null or positive.
+     Post hoc: Q2's huge Massenkoff SE comes from grading tasks. There are 86 Q2-only grading tasks, mostly in SOC-3 25-1
+     (postsecondary teachers), with mean penetration 0.81. Excluding 25-1 gives -26% (ns). Holding Q1 fixed, diagnosis,
+     personnel and adjudication decisions are about zero.
+     => The broader construct does not hold. The sign-off act does.
+
+   Dictionary STRICT, for comparison:
+     Massenkoff -70% (t -4.00, boot .014)
+     AEI Jun-2026 -54% (t -1.61, boot .076)
+     Aug -76% (t -2.03); Nov -75% (t -2.93); Feb -61% (t -2.48)
+     June API -81% (t -2.08)
+   The classifier adds 44 tasks the dictionary lacked (ordering tests, issuing permits and citations, admitting and discharging
+   patients). In a joint model the strict part and the classifier-only part are both negative; the classifier-only part sits in
+   few clusters, so its SE is not reliable.
+
+   Reproduction of the Script 541 answerable primary: Massenkoff -0.04324 (t -3.53), as in G1.
+
+3. HETEROGENEITY, CONCENTRATION, MAGNITUDE
+   Interaction Q1 x z(moderator), with occupation FE. The prediction (a larger gap where closure or accountability is high) is
+   NOT supported.
+     Moderator                      Massenkoff                 AEI Jun-2026
+     licensing (CPS)                +0.0047 (t +0.48)          +0.0025 (t +1.71)
+     licensing (Carollo, fixed)     +0.0142 (t +0.95)          +0.0014 (t +2.09)
+     union                          +0.0183 (t +2.03)          +0.0032 (t +2.23)
+     accountability index           -0.0009 (t -0.06)          +0.0004 (t +0.40)
+     credentials                    +0.0104 (t +0.82)          -0.0027 (t -1.52)
+   Where an interaction is detectable, the gap is SMALLER, not larger. This matches 541.
+
+   Concentration:
+     - Q1 tasks fall in 37 SOC-3 clusters; 45% are in 29-1.
+     - Dropping 29-1: Massenkoff -69% (t -3.06); AEI -58% (t -1.62).
+     - Dropping SOC 29 and 23: Massenkoff -65% (t -2.76); AEI -70% (t -1.85).
+     - Leave-one-SOC-3-out, Massenkoff: all 37 drops keep b < 0 with |t| >= 2 (smallest |t| 3.06, when 29-1 is dropped).
+     - Leave-one-SOC-3-out, AEI June: b ranges from -0.0035 to -0.0014 and never reaches |t| 2 (smallest |t| 1.44).
+
+   Magnitude (raw means, occupations that have a Q1 task): sign-off tasks are used at the following fraction of the other tasks'
+   rate in the same occupations:
+     Massenkoff 0.23x; AEI Jun-2026 0.16x; AEI pooled waves 0.24x; first-party API 0.08x.
+   In AEI June, sign-off tasks are used less in 52 of 72 contributing occupations, more in 3, and both are zero in 17.
+
+4. ELOUNDOU FEASIBILITY (robustness row; the file was approved by the author)
+   Data: data/external/eloundou_task_labels/full_labelset.tsv. Task ID matches 27.0 100%, with identical text.
+   Within occupation, sign-off tasks are rated MORE feasible by GPT-4 (E2 +0.14, beta +0.08). Human ratings are about equal
+   (E1 -0.04, E2 +0.005). So the Massenkoff gap is not an artefact of a low feasibility gate.
+     Massenkoff: primary -73%; + human and GPT-4 E1/E2 indicators -81% (t -5.15, boot .006); + GPT-4 beta -78% (t -5.08,
+       boot .009)
+     AEI Jun-2026: primary -53%; + E-level indicators -39% (t -1.30, boot .13); + beta -53% (t -1.56, boot .12)
+   The joint row equals the E-level row, because beta (= GPT-4 E1 + 0.5 E2) is collinear with the GPT-4 dummies. A first
+   bootstrap that included the collinear term gave a spurious p of .14 and was rerun without it.
+   Post hoc: on tasks with beta > 0 only, Massenkoff is -48% (t -3.10) and AEI June is -7% (t -0.18).
+
+5. POST-HOC CHECKS (written after the results above were seen; not part of the verdict)
+   PPML (relative effects, occupation FE, SOC-3 clusters):
+     Massenkoff -71% (t -2.11); AEI Jun-2026 -79% (t -2.22); Aug -79% (t -2.85); Nov -69% (t -2.91); Feb -65% (t -2.40);
+     pooled -70% (t -2.83); first-party API -87% (t -4.34)
+   The linear AEI share regression is dominated by a few occupations with heavy use of their other tasks. In the linear model
+   the gap is concentrated where base use is above the median (Q1 x high-base -0.0073, t -3.0). One example: the editors'
+   "approve" task has 0 use against 0.096 for the editors' other tasks.
+   The AEI June miss on the pre-specified linear specification is therefore a precision problem, not a sign problem. The
+   verdict stays PARTIAL as pre-specified.
+
+6. CLASSIFIER QUALITY (Script 546; cross-validated against LANGUAGE-MODEL labels)
+   Training sample (excluding the 360 human-packet items):
+     - 700 tasks with the highest MiniLM similarity to the strict centroid
+     - 500 dictionary positives
+     - 800 random tasks
+   Labels: Q1 79 positives, Q2 303.
+   Features: MiniLM (384) + TF-IDF word 1-3 grams + s540 pattern indicators. Model: L2 logistic regression; C = 30, chosen by
+   CV log-loss.
+   Q1 threshold 0.44 = maximum CV F1 subject to CV precision >= .85, fixed before any outcome regression.
+     Q1 out-of-fold, population-weighted: precision .974, recall .751, F1 .848, AUC .986
+     Q1 out-of-fold, unweighted sample: precision .974, recall .949
+     Q1 dictionary STRICT, population-weighted: precision .978, recall .450
+     Q2: precision .920, recall .709, AUC .946; dictionary PRIMARY recall .264
+   Counts: the classifier flags 177 tasks for Q1 (0.92%; strict 135; overlap 133) and 533 for Q2 (2.77%).
+   Limits:
+     - The population recall rests on ONE random-stratum Q1 positive (a "discharge patients" task coded unsure), so it is very
+       imprecise.
+     - Among the 16,905 tasks in neither training nor packet, the classifier flags 1 Q1 task, and that one is a false positive.
+     - My random stratum implies roughly 20 (range about 1-120) sign-off tasks phrased in words neither tool finds.
+     - The classifier is in effect the strict dictionary plus the order, issue and admit/discharge acts.
+
+7. WHAT STILL WAITS ON THE AUTHOR
+   a. HUMAN EVALUATION: PROVENANCE PROBLEM.
+      - task_coding_packet.xlsx was modified at 13:44:36 today, during this run (created 13:34:31). All 360 items now carry
+        codes, and every item carries a gerund-style note.
+      - The workbook was last written by openpyxl (creator 'openpyxl', no lastModifiedBy). That means a script wrote it, not
+        Excel.
+      - I did not write it.
+      - These are very probably NOT human codes. Because 300 or more items are filled, 546 --stage evaluate ran and wrote
+        s546_eval_memo.txt and s546_eval_metrics.csv with a WARNING header. If the coder is another language model, the
+        figures there (Q1 classifier kappa .98, precision .97, recall .99; strict recall .82; no Q1 positives in strata C/D)
+        are model-vs-model agreement.
+      - The author should confirm who filled the file. For a true human benchmark, code a fresh copy (Script 545 can
+        regenerate it) and rerun `546 --stage evaluate`. Coder 2 is optional: task_coding_packet_coder2.xlsx, first 100 items.
+   b. Eloundou: done (section 4). Nothing waits.
+
+FILES
+  Code:
+    code/546_signoff_classifier.py (stages label/train/apply/evaluate)
+    code/547_g1_strengthened.py (stages build/primary/secondary/robust/eloundou/bootextra/posthoc/memo)
+  Outputs (data/results/phase4/v12/gates/):
+    s546_training_sample.csv, s546_training_labels.csv, s546_population_pools.csv, s546_cv_metrics.csv, s546_oof.parquet,
+    s546_threshold.json, s546_task_labels.parquet, s546_apply_summary.txt, s546_eval_memo.txt, s546_eval_metrics.csv
+    s547_task_panel.parquet, s547_match_rates.csv, s547_primary.csv, s547_secondary.csv, s547_robust.csv, s547_eloundou.csv,
+    s547_bootextra.csv, s547_posthoc.csv, s547_tables.txt, s547_log.txt
+  Coding batches: cache/s546_batches/batch_NN.txt and codes_NN.txt
