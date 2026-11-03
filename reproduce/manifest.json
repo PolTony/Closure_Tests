@@ -1,0 +1,1759 @@
+{
+  "schema": "boundaries-reproduce/1",
+  "python": ">=3.9",
+  "outputs_dir": "data_outputs",
+  "note": "Experiment commands, dependencies, inputs, and outputs. Run python3 src/reproduce.py to execute selected jobs and record file hashes in data_outputs/RUN_MANIFEST.json.",
+  "jobs": [
+    {
+      "id": "benchmark",
+      "stage": 1,
+      "args": [
+        "src/run_live_benchmark.py"
+      ],
+      "outputs": [
+        "results_extended_18occ_tasks.csv",
+        "results_task_level_primary.csv",
+        "results_occupation_summary_18.csv",
+        "results_packet_traces_primary_360.json",
+        "results_packet_traces_extended_1080.json",
+        "compiler_repair_logs.json"
+      ],
+      "deps": [],
+      "supports": "Appendix Section 4, Tables A4\u2013A6; full configuration"
+    },
+    {
+      "id": "robustness_suite",
+      "stage": 2,
+      "args": [
+        "src/run_robustness_suite.py"
+      ],
+      "outputs": [
+        "robustness_summary.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 9, Table A13; 42-run robustness suite"
+    },
+    {
+      "id": "archive_boundary",
+      "stage": 2,
+      "args": [
+        "src/run_archive_boundary.py"
+      ],
+      "outputs": [
+        "archive_boundary.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 9, Table A14; published precedent learning"
+    },
+    {
+      "id": "sourced_calibration",
+      "stage": 2,
+      "args": [
+        "src/run_sourced_calibration.py"
+      ],
+      "outputs": [
+        "sourced/headline_comparison.json",
+        "sourced/attribute_changes.csv",
+        "sourced/results_extended_18occ_tasks.csv",
+        "sourced/results_occupation_summary_18.csv",
+        "sourced/results_task_level_primary.csv",
+        "sourced/results_packet_traces_extended_1080.json",
+        "sourced/results_packet_traces_primary_360.json",
+        "sourced/compiler_repair_logs.json"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Supplementary sensitivity to sourced occupational attributes"
+    },
+    {
+      "id": "structural_challenge",
+      "stage": 2,
+      "args": [
+        "src/run_structural_challenge.py"
+      ],
+      "outputs": [
+        "structural_challenge.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 9; alternative convention formulas"
+    },
+    {
+      "id": "anomaly_detection",
+      "stage": 2,
+      "args": [
+        "src/run_anomaly_detection.py"
+      ],
+      "outputs": [
+        "anomaly_detection.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 9; detection versus correction"
+    },
+    {
+      "id": "bump_extended",
+      "stage": 2,
+      "args": [
+        "src/run_bumping.py",
+        "--corpus",
+        "extended",
+        "--n-eval",
+        "20"
+      ],
+      "outputs": [
+        "bumping_extended.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A10; occupational competition"
+    },
+    {
+      "id": "bump_primary",
+      "stage": 2,
+      "args": [
+        "src/run_bumping.py",
+        "--corpus",
+        "primary"
+      ],
+      "outputs": [
+        "bumping_primary.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A10; occupational competition"
+    },
+    {
+      "id": "bump_primary_subprior002",
+      "stage": 2,
+      "args": [
+        "src/run_bumping.py",
+        "--corpus",
+        "primary",
+        "--set",
+        "sub_u_prior=0.02",
+        "--tag",
+        "_subprior002"
+      ],
+      "outputs": [
+        "bumping_primary_subprior002.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A10; occupational competition"
+    },
+    {
+      "id": "bump_extended_sourced",
+      "stage": 2,
+      "args": [
+        "src/run_bumping.py",
+        "--corpus",
+        "extended",
+        "--n-eval",
+        "20",
+        "--subordinates",
+        "sourced",
+        "--tag",
+        "_sourced"
+      ],
+      "outputs": [
+        "bumping_extended_sourced.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A10; occupational competition"
+    },
+    {
+      "id": "bump_gates_none",
+      "stage": 2,
+      "args": [
+        "src/run_bumping.py",
+        "--corpus",
+        "extended",
+        "--n-eval",
+        "20",
+        "--gates",
+        "none"
+      ],
+      "outputs": [
+        "bumping_extended_gates_none.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A10; occupational competition"
+    },
+    {
+      "id": "bump_gates_none_phi05",
+      "stage": 2,
+      "args": [
+        "src/run_bumping.py",
+        "--corpus",
+        "extended",
+        "--n-eval",
+        "20",
+        "--gates",
+        "none",
+        "--set",
+        "liability_scale=2.7",
+        "--tag",
+        "_gates_none_phi05"
+      ],
+      "outputs": [
+        "bumping_extended_gates_none_phi05.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A10; occupational competition"
+    },
+    {
+      "id": "bump_gates_all",
+      "stage": 2,
+      "args": [
+        "src/run_bumping.py",
+        "--corpus",
+        "extended",
+        "--n-eval",
+        "20",
+        "--gates",
+        "all"
+      ],
+      "outputs": [
+        "bumping_extended_gates_all.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A10; occupational competition"
+    },
+    {
+      "id": "bump_gates_all_phi05",
+      "stage": 2,
+      "args": [
+        "src/run_bumping.py",
+        "--corpus",
+        "extended",
+        "--n-eval",
+        "20",
+        "--gates",
+        "all",
+        "--set",
+        "liability_scale=2.7",
+        "--tag",
+        "_gates_all_phi05"
+      ],
+      "outputs": [
+        "bumping_extended_gates_all_phi05.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A10; occupational competition"
+    },
+    {
+      "id": "dyn_mandatory",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16"
+      ],
+      "outputs": [
+        "dynamics_mandatory.csv",
+        "dynamics_labor_mandatory.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_mandatory_learning",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--tag",
+        "_learning"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning.csv",
+        "dynamics_labor_mandatory_learning.csv",
+        "dynamics_knowledge_mandatory_learning.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_fee",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--incumbent-fee",
+        "--tag",
+        "_fee"
+      ],
+      "outputs": [
+        "dynamics_mandatory_fee.csv",
+        "dynamics_labor_mandatory_fee.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A11; review pricing"
+    },
+    {
+      "id": "dyn_discretion",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "discretion",
+        "--periods",
+        "16"
+      ],
+      "outputs": [
+        "dynamics_discretion.csv",
+        "dynamics_labor_discretion.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_discretion_learning",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "discretion",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--tag",
+        "_learning"
+      ],
+      "outputs": [
+        "dynamics_discretion_learning.csv",
+        "dynamics_labor_discretion_learning.csv",
+        "dynamics_knowledge_discretion_learning.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_discretion_fee",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "discretion",
+        "--periods",
+        "16",
+        "--incumbent-fee",
+        "--tag",
+        "_fee"
+      ],
+      "outputs": [
+        "dynamics_discretion_fee.csv",
+        "dynamics_labor_discretion_fee.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A11; review pricing"
+    },
+    {
+      "id": "dyn_strategic",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16"
+      ],
+      "outputs": [
+        "dynamics_strategic.csv",
+        "dynamics_labor_strategic.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_strategic_learning",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--tag",
+        "_learning"
+      ],
+      "outputs": [
+        "dynamics_strategic_learning.csv",
+        "dynamics_labor_strategic_learning.csv",
+        "dynamics_knowledge_strategic_learning.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_strategic_fee",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--incumbent-fee",
+        "--tag",
+        "_fee"
+      ],
+      "outputs": [
+        "dynamics_strategic_fee.csv",
+        "dynamics_labor_strategic_fee.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A11; review pricing"
+    },
+    {
+      "id": "dyn_mandatory_fb_both",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--feedback",
+        "both",
+        "--tag",
+        "_fb_both"
+      ],
+      "outputs": [
+        "dynamics_mandatory_fb_both.csv",
+        "dynamics_labor_mandatory_fb_both.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_mandatory_fb_regulator_learning",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--feedback",
+        "regulator",
+        "--tag",
+        "_fb_regulator_learning"
+      ],
+      "outputs": [
+        "dynamics_mandatory_fb_regulator_learning.csv",
+        "dynamics_labor_mandatory_fb_regulator_learning.csv",
+        "dynamics_knowledge_mandatory_fb_regulator_learning.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_strategic_fb_both",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--feedback",
+        "both",
+        "--tag",
+        "_fb_both"
+      ],
+      "outputs": [
+        "dynamics_strategic_fb_both.csv",
+        "dynamics_labor_strategic_fb_both.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_strategic_fb_regulator_learning",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--feedback",
+        "regulator",
+        "--tag",
+        "_fb_regulator_learning"
+      ],
+      "outputs": [
+        "dynamics_strategic_fb_regulator_learning.csv",
+        "dynamics_labor_strategic_fb_regulator_learning.csv",
+        "dynamics_knowledge_strategic_fb_regulator_learning.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_k05",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "learn_kappa_scale=0.5",
+        "--tag",
+        "_learning_k05"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_k05.csv",
+        "dynamics_labor_mandatory_learning_k05.csv",
+        "dynamics_knowledge_mandatory_learning_k05.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_k15",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "learn_kappa_scale=1.5",
+        "--tag",
+        "_learning_k15"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_k15.csv",
+        "dynamics_labor_mandatory_learning_k15.csv",
+        "dynamics_knowledge_mandatory_learning_k15.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_k20",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "learn_kappa_scale=2.0",
+        "--tag",
+        "_learning_k20"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_k20.csv",
+        "dynamics_labor_mandatory_learning_k20.csv",
+        "dynamics_knowledge_mandatory_learning_k20.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_delta10",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "labor_delta=0.10",
+        "--tag",
+        "_learning_delta10"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_delta10.csv",
+        "dynamics_labor_mandatory_learning_delta10.csv",
+        "dynamics_knowledge_mandatory_learning_delta10.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_growth05",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "labor_demand_growth=0.05",
+        "--tag",
+        "_learning_growth05"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_growth05.csv",
+        "dynamics_labor_mandatory_learning_growth05.csv",
+        "dynamics_knowledge_mandatory_learning_growth05.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_noescalate",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "learn_escalate_overt=false",
+        "--tag",
+        "_learning_noescalate"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_noescalate.csv",
+        "dynamics_labor_mandatory_learning_noescalate.csv",
+        "dynamics_knowledge_mandatory_learning_noescalate.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_nodefer",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "learn_defer_when_unknowing=false",
+        "--tag",
+        "_learning_nodefer"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_nodefer.csv",
+        "dynamics_labor_mandatory_learning_nodefer.csv",
+        "dynamics_knowledge_mandatory_learning_nodefer.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_gates_none",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--gates",
+        "none",
+        "--tag",
+        "_learning_gates_none"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_gates_none.csv",
+        "dynamics_labor_mandatory_learning_gates_none.csv",
+        "dynamics_knowledge_mandatory_learning_gates_none.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_gates_all",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--gates",
+        "all",
+        "--tag",
+        "_learning_gates_all"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_gates_all.csv",
+        "dynamics_labor_mandatory_learning_gates_all.csv",
+        "dynamics_knowledge_mandatory_learning_gates_all.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_k15_gates_none",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "learn_kappa_scale=1.5",
+        "--gates",
+        "none",
+        "--tag",
+        "_learning_k15_gates_none"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_k15_gates_none.csv",
+        "dynamics_labor_mandatory_learning_k15_gates_none.csv",
+        "dynamics_knowledge_mandatory_learning_k15_gates_none.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_k15_gates_all",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "learn_kappa_scale=1.5",
+        "--gates",
+        "all",
+        "--tag",
+        "_learning_k15_gates_all"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_k15_gates_all.csv",
+        "dynamics_labor_mandatory_learning_k15_gates_all.csv",
+        "dynamics_knowledge_mandatory_learning_k15_gates_all.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_kbasis_p1",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "learn_kappa_basis=period1",
+        "--tag",
+        "_learning_kbasis_p1"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_kbasis_p1.csv",
+        "dynamics_labor_mandatory_learning_kbasis_p1.csv",
+        "dynamics_knowledge_mandatory_learning_kbasis_p1.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_junior_replaced",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--set",
+        "labor_junior_operates_tool=false",
+        "--tag",
+        "_learning_junior_replaced"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_junior_replaced.csv",
+        "dynamics_labor_mandatory_learning_junior_replaced.csv",
+        "dynamics_knowledge_mandatory_learning_junior_replaced.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_learning_fee",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--profession",
+        "learning",
+        "--incumbent-fee",
+        "--tag",
+        "_learning_fee"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_fee.csv",
+        "dynamics_labor_mandatory_learning_fee.csv",
+        "dynamics_knowledge_mandatory_learning_fee.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 7, Table A11; review pricing"
+    },
+    {
+      "id": "dyn_mandatory_learning_t32",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "32",
+        "--profession",
+        "learning",
+        "--tag",
+        "_learning_t32"
+      ],
+      "outputs": [
+        "dynamics_mandatory_learning_t32.csv",
+        "dynamics_labor_mandatory_learning_t32.csv",
+        "dynamics_knowledge_mandatory_learning_t32.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_junior_replaced",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--set",
+        "labor_junior_operates_tool=false",
+        "--tag",
+        "_junior_replaced"
+      ],
+      "outputs": [
+        "dynamics_mandatory_junior_replaced.csv",
+        "dynamics_labor_mandatory_junior_replaced.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_labour_default",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "12",
+        "--corpus",
+        "primary",
+        "--tag",
+        "_labour_default"
+      ],
+      "outputs": [
+        "dynamics_mandatory_labour_default.csv",
+        "dynamics_labor_mandatory_labour_default.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_labour_delta10",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "12",
+        "--corpus",
+        "primary",
+        "--set",
+        "labor_delta=0.10",
+        "--tag",
+        "_labour_delta10"
+      ],
+      "outputs": [
+        "dynamics_mandatory_labour_delta10.csv",
+        "dynamics_labor_mandatory_labour_delta10.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_labour_app12",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "12",
+        "--corpus",
+        "primary",
+        "--set",
+        "labor_apprenticeship_periods=12",
+        "--tag",
+        "_labour_app12"
+      ],
+      "outputs": [
+        "dynamics_mandatory_labour_app12.csv",
+        "dynamics_labor_mandatory_labour_app12.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_labour_sens",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "12",
+        "--corpus",
+        "primary",
+        "--set",
+        "labor_delta=0.10",
+        "--set",
+        "labor_apprenticeship_periods=12",
+        "--tag",
+        "_labour_sens"
+      ],
+      "outputs": [
+        "dynamics_mandatory_labour_sens.csv",
+        "dynamics_labor_mandatory_labour_sens.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 6, Tables A8\u2013A9; staffing and professional learning"
+    },
+    {
+      "id": "dyn_mandatory_labels_recorded",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--archive-labels",
+        "recorded",
+        "--tag",
+        "_labels_recorded"
+      ],
+      "outputs": [
+        "dynamics_mandatory_labels_recorded.csv",
+        "dynamics_labor_mandatory_labels_recorded.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_discretion_labels_recorded",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "discretion",
+        "--periods",
+        "16",
+        "--archive-labels",
+        "recorded",
+        "--tag",
+        "_labels_recorded"
+      ],
+      "outputs": [
+        "dynamics_discretion_labels_recorded.csv",
+        "dynamics_labor_discretion_labels_recorded.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_mandatory_labels_noisy",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--archive-labels",
+        "noisy",
+        "--tag",
+        "_labels_noisy"
+      ],
+      "outputs": [
+        "dynamics_mandatory_labels_noisy.csv",
+        "dynamics_labor_mandatory_labels_noisy.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_discretion_labels_noisy",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "discretion",
+        "--periods",
+        "16",
+        "--archive-labels",
+        "noisy",
+        "--tag",
+        "_labels_noisy"
+      ],
+      "outputs": [
+        "dynamics_discretion_labels_noisy.csv",
+        "dynamics_labor_discretion_labels_noisy.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_mandatory_labels_delayed",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--archive-labels",
+        "delayed",
+        "--tag",
+        "_labels_delayed"
+      ],
+      "outputs": [
+        "dynamics_mandatory_labels_delayed.csv",
+        "dynamics_labor_mandatory_labels_delayed.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_discretion_labels_delayed",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "discretion",
+        "--periods",
+        "16",
+        "--archive-labels",
+        "delayed",
+        "--tag",
+        "_labels_delayed"
+      ],
+      "outputs": [
+        "dynamics_discretion_labels_delayed.csv",
+        "dynamics_labor_discretion_labels_delayed.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_mandatory_clientlearn",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "mandatory",
+        "--periods",
+        "16",
+        "--client-learning",
+        "--tag",
+        "_clientlearn"
+      ],
+      "outputs": [
+        "dynamics_mandatory_clientlearn.csv",
+        "dynamics_labor_mandatory_clientlearn.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_discretion_clientlearn",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "discretion",
+        "--periods",
+        "16",
+        "--client-learning",
+        "--tag",
+        "_clientlearn"
+      ],
+      "outputs": [
+        "dynamics_discretion_clientlearn.csv",
+        "dynamics_labor_discretion_clientlearn.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_strategic_clientlearn",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--client-learning",
+        "--tag",
+        "_clientlearn"
+      ],
+      "outputs": [
+        "dynamics_strategic_clientlearn.csv",
+        "dynamics_labor_strategic_clientlearn.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_strategic_perfectforesight",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--forecast-mode",
+        "perfect_foresight",
+        "--tag",
+        "_perfectforesight"
+      ],
+      "outputs": [
+        "dynamics_strategic_perfectforesight.csv",
+        "dynamics_labor_strategic_perfectforesight.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_strategic_u2",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--universe",
+        "2",
+        "--tag",
+        "_u2"
+      ],
+      "outputs": [
+        "dynamics_strategic_u2.csv",
+        "dynamics_labor_strategic_u2.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_strategic_rep000",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--set",
+        "dyn_reputation_bonus=0.0",
+        "--tag",
+        "_rep000"
+      ],
+      "outputs": [
+        "dynamics_strategic_rep000.csv",
+        "dynamics_labor_strategic_rep000.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_strategic_rep005",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "strategic",
+        "--periods",
+        "16",
+        "--set",
+        "dyn_reputation_bonus=0.05",
+        "--tag",
+        "_rep005"
+      ],
+      "outputs": [
+        "dynamics_strategic_rep005.csv",
+        "dynamics_labor_strategic_rep005.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "dyn_discretion_gate05",
+      "stage": 2,
+      "args": [
+        "src/run_dynamics.py",
+        "--regimes",
+        "discretion",
+        "--periods",
+        "16",
+        "--set",
+        "dyn_pub_gate=0.5",
+        "--tag",
+        "_gate05"
+      ],
+      "outputs": [
+        "dynamics_discretion_gate05.csv",
+        "dynamics_labor_discretion_gate05.csv"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 5, Table A7; disclosure and regulatory comparisons"
+    },
+    {
+      "id": "occupation_compiler_saved",
+      "stage": 2,
+      "args": [
+        "src/occupation_compiler.py",
+        "--provider",
+        "saved",
+        "--occupations",
+        "17-1022,17-2071,29-1021,29-1051,29-1215"
+      ],
+      "outputs": [
+        "occupation_compiler_saved_drafts.csv"
+      ],
+      "deps": [],
+      "supports": "Prospective expanded-corpus infrastructure; saved rulebook evaluation"
+    },
+    {
+      "id": "closure_formation",
+      "stage": 3,
+      "args": [
+        "src/run_closure_formation.py"
+      ],
+      "outputs": [
+        "closure_formation.csv",
+        "closure_formation_game.csv",
+        "closure_formation_phi05.csv",
+        "closure_formation_game_phi05.csv"
+      ],
+      "deps": [
+        "bump_gates_none",
+        "bump_gates_all",
+        "bump_gates_none_phi05",
+        "bump_gates_all_phi05",
+        "bump_extended"
+      ],
+      "supports": "Appendix Section 9, Figure 7; licensing formation"
+    },
+    {
+      "id": "validation_ladder",
+      "stage": 4,
+      "args": [
+        "src/run_validation_ladder.py"
+      ],
+      "outputs": [
+        "validation_ladder.csv"
+      ],
+      "deps": [
+        "closure_formation",
+        "dyn_mandatory",
+        "dyn_mandatory_fb_both",
+        "dyn_mandatory_junior_replaced",
+        "bump_extended"
+      ],
+      "supports": "Appendix Section 9; exploratory empirical comparisons"
+    },
+    {
+      "id": "knowledge_summary",
+      "stage": 3,
+      "args": [
+        "src/run_knowledge_summary.py"
+      ],
+      "outputs": [],
+      "deps": [
+        "dyn_mandatory_learning",
+        "dyn_discretion_learning",
+        "dyn_strategic_learning",
+        "dyn_mandatory_fb_regulator_learning",
+        "dyn_strategic_fb_regulator_learning",
+        "dyn_mandatory_learning_k05",
+        "dyn_mandatory_learning_k15",
+        "dyn_mandatory_learning_k20",
+        "dyn_mandatory_learning_delta10",
+        "dyn_mandatory_learning_growth05",
+        "dyn_mandatory_learning_noescalate",
+        "dyn_mandatory_learning_nodefer",
+        "dyn_mandatory_learning_gates_none",
+        "dyn_mandatory_learning_gates_all",
+        "dyn_mandatory_learning_k15_gates_none",
+        "dyn_mandatory_learning_k15_gates_all",
+        "dyn_mandatory_learning_kbasis_p1",
+        "dyn_mandatory_learning_junior_replaced",
+        "dyn_mandatory_learning_fee",
+        "dyn_mandatory_learning_t32"
+      ],
+      "supports": "Appendix Section 6; promotion competence and senior knowledge"
+    },
+    {
+      "id": "lever_summary",
+      "stage": 3,
+      "args": [
+        "src/run_lever_summary.py"
+      ],
+      "outputs": [],
+      "deps": [
+        "dyn_mandatory_fee",
+        "dyn_discretion_fee",
+        "dyn_strategic_fee",
+        "dyn_mandatory_learning_junior_replaced",
+        "dyn_mandatory_learning_fee",
+        "dyn_mandatory_junior_replaced",
+        "dyn_mandatory",
+        "dyn_discretion",
+        "dyn_strategic"
+      ],
+      "supports": "Appendix Sections 6\u20137; junior operation and review pricing"
+    },
+    {
+      "id": "moments",
+      "stage": 3,
+      "args": [
+        "src/run_moments.py"
+      ],
+      "outputs": [],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 9; exploratory empirical comparisons"
+    },
+    {
+      "id": "llm_mock",
+      "stage": 2,
+      "args": [
+        "src/run_llm_arm.py",
+        "--provider",
+        "mock"
+      ],
+      "outputs": [
+        "results_llm_arm_mock_primary_compiler.csv",
+        "results_llm_arm_mock_primary_traces.json"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 8, Table A12; model-agent experiment and request provenance"
+    },
+    {
+      "id": "llm_replay_legacy",
+      "stage": 2,
+      "args": [
+        "src/run_llm_arm.py",
+        "--provider",
+        "replay",
+        "--corpus",
+        "primary",
+        "--n-eval",
+        "10",
+        "--replay-mode",
+        "legacy",
+        "--transcript",
+        "data_outputs/llm_transcripts_primary.jsonl",
+        "--tag",
+        "legacy_replay"
+      ],
+      "outputs": [
+        "results_llm_arm_replay_primary_legacy_replay_replay_provenance.json",
+        "results_llm_arm_replay_primary_legacy_replay_compiler.csv",
+        "results_llm_arm_replay_primary_legacy_replay_traces.json"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 8, Table A12; model-agent experiment and request provenance"
+    },
+    {
+      "id": "llm_replay_agentic_legacy",
+      "stage": 2,
+      "args": [
+        "src/run_llm_arm.py",
+        "--provider",
+        "replay",
+        "--compiler-mode",
+        "agentic",
+        "--roles",
+        "compiler",
+        "--transcript",
+        "data_outputs/llm_transcripts_agentic.jsonl",
+        "--max-tasks",
+        "1",
+        "--replay-mode",
+        "legacy",
+        "--tag",
+        "legacy_replay"
+      ],
+      "outputs": [
+        "results_llm_arm_replay_primary_agentic_legacy_replay_replay_provenance.json",
+        "results_llm_arm_replay_primary_agentic_legacy_replay_compiler.csv",
+        "results_llm_arm_replay_primary_agentic_legacy_replay_traces.json"
+      ],
+      "deps": [
+        "benchmark"
+      ],
+      "supports": "Appendix Section 8, Table A12; model-agent experiment and request provenance"
+    },
+    {
+      "id": "llm_provenance",
+      "stage": 2,
+      "args": [
+        "src/run_llm_provenance.py"
+      ],
+      "outputs": [
+        "llm_provenance_summary.csv",
+        "llm_provenance_summary.json",
+        "llm_provenance_by_role.csv"
+      ],
+      "deps": [
+        "llm_replay_legacy"
+      ],
+      "supports": "Appendix Section 8, Table A12; model-agent experiment and request provenance"
+    },
+    {
+      "id": "diagnostics_summary",
+      "stage": 3,
+      "args": [
+        "src/run_diagnostics_summary.py"
+      ],
+      "outputs": [
+        "diagnostics_summary.csv"
+      ],
+      "deps": [
+        "dyn_mandatory",
+        "dyn_discretion",
+        "dyn_strategic",
+        "dyn_mandatory_labels_recorded",
+        "dyn_discretion_labels_recorded",
+        "dyn_mandatory_labels_noisy",
+        "dyn_discretion_labels_noisy",
+        "dyn_mandatory_labels_delayed",
+        "dyn_discretion_labels_delayed",
+        "dyn_mandatory_clientlearn",
+        "dyn_discretion_clientlearn",
+        "dyn_strategic_clientlearn",
+        "dyn_strategic_perfectforesight",
+        "dyn_strategic_u2"
+      ],
+      "supports": "Supplementary diagnostic summary"
+    },
+    {
+      "id": "figures",
+      "stage": 5,
+      "args": [
+        "src/make_figures.py"
+      ],
+      "outputs": [
+        "submission/figures/A01_study_design.png",
+        "submission/figures/A02_work_allocation.png",
+        "submission/figures/A03_case_disclosure.png",
+        "submission/figures/A04_professional_knowledge.png",
+        "submission/figures/A05_occupational_competition.png",
+        "submission/figures/A06_review_fees.png",
+        "submission/figures/A07_licensing_formation.png"
+      ],
+      "deps": [
+        "benchmark",
+        "robustness_suite",
+        "archive_boundary",
+        "sourced_calibration",
+        "structural_challenge",
+        "anomaly_detection",
+        "bump_extended",
+        "bump_primary",
+        "bump_primary_subprior002",
+        "bump_extended_sourced",
+        "bump_gates_none",
+        "bump_gates_none_phi05",
+        "bump_gates_all",
+        "bump_gates_all_phi05",
+        "dyn_mandatory",
+        "dyn_mandatory_learning",
+        "dyn_mandatory_fee",
+        "dyn_discretion",
+        "dyn_discretion_learning",
+        "dyn_discretion_fee",
+        "dyn_strategic",
+        "dyn_strategic_learning",
+        "dyn_strategic_fee",
+        "dyn_mandatory_fb_both",
+        "dyn_mandatory_fb_regulator_learning",
+        "dyn_strategic_fb_both",
+        "dyn_strategic_fb_regulator_learning",
+        "dyn_mandatory_learning_k05",
+        "dyn_mandatory_learning_k15",
+        "dyn_mandatory_learning_k20",
+        "dyn_mandatory_learning_delta10",
+        "dyn_mandatory_learning_growth05",
+        "dyn_mandatory_learning_noescalate",
+        "dyn_mandatory_learning_nodefer",
+        "dyn_mandatory_learning_gates_none",
+        "dyn_mandatory_learning_gates_all",
+        "dyn_mandatory_learning_k15_gates_none",
+        "dyn_mandatory_learning_k15_gates_all",
+        "dyn_mandatory_learning_kbasis_p1",
+        "dyn_mandatory_learning_junior_replaced",
+        "dyn_mandatory_learning_fee",
+        "dyn_mandatory_learning_t32",
+        "dyn_mandatory_junior_replaced",
+        "dyn_mandatory_labour_default",
+        "dyn_mandatory_labour_delta10",
+        "dyn_mandatory_labour_app12",
+        "dyn_mandatory_labour_sens",
+        "dyn_mandatory_labels_recorded",
+        "dyn_discretion_labels_recorded",
+        "dyn_mandatory_labels_noisy",
+        "dyn_discretion_labels_noisy",
+        "dyn_mandatory_labels_delayed",
+        "dyn_discretion_labels_delayed",
+        "dyn_mandatory_clientlearn",
+        "dyn_discretion_clientlearn",
+        "dyn_strategic_clientlearn",
+        "dyn_strategic_perfectforesight",
+        "dyn_strategic_u2",
+        "closure_formation",
+        "validation_ladder",
+        "knowledge_summary",
+        "lever_summary",
+        "moments",
+        "llm_mock",
+        "llm_replay_legacy",
+        "llm_provenance",
+        "llm_replay_agentic_legacy",
+        "dyn_strategic_rep000",
+        "dyn_strategic_rep005",
+        "dyn_discretion_gate05",
+        "occupation_compiler_saved"
+      ],
+      "supports": "Appendix Figures 1\u20137",
+      "interpreter": "figures",
+      "output_root": "project",
+      "inputs": []
+    },
+    {
+      "id": "documents",
+      "stage": 6,
+      "args": [
+        "src/build_docx.py"
+      ],
+      "outputs": [
+        "submission/PROPOSAL_STAGE1.docx",
+        "submission/TECHNICAL_APPENDIX.docx"
+      ],
+      "output_root": "project",
+      "inputs": [
+        "submission/PROPOSAL_STAGE1.docx",
+        "submission/TECHNICAL_APPENDIX.docx"
+      ],
+      "deps": [
+        "figures"
+      ],
+      "supports": "Validate authoritative Word documents without replacing manual edits"
+    },
+    {
+      "id": "documentation_check",
+      "stage": 7,
+      "args": [
+        "reproduce/check_docs.py"
+      ],
+      "outputs": [],
+      "deps": [
+        "documents"
+      ],
+      "inputs": [
+        "README.md",
+        "docs/VALIDATION_PROTOCOL.md",
+        "submission/PROPOSAL_STAGE1.docx",
+        "submission/TECHNICAL_APPENDIX.docx"
+      ],
+      "supports": "Proposal length, counts, figure references, and Word export checks"
+    }
+  ]
+}
