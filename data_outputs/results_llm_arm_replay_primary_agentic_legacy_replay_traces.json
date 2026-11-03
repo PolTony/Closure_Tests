@@ -1,0 +1,782 @@
+[
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.12,
+  "arm_critic_status": "HANDBOOK_OVERRIDE_FIRED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_ACCEPT_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_NOVICE_GUESS",
+   "treatment": 415.69
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 480.81
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 480.81
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 0,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_ARITHMETIC_SLIP",
+  "arm_collab_mode": "COLLAB_OVERRIDE_SHALLOW_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "NOVICE_SCHEDULE_MISALIGNMENT",
+   "treatment": 923.46
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 446.44
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 431.34
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 447.34
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 238.55
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 238.55
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P04",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 608.81
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 365.41
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 365.41
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P05",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "NOVICE_SCHEDULE_MISALIGNMENT",
+   "treatment": 622.28
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 157.68
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 157.68
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P06",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 441.81
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 138.73
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 138.73
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P07",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 793.41
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 494.65
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 494.65
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P08",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 629.62
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 262.13
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 262.13
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P09",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 580.48
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 321.25
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 321.25
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P10",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 455.07
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 154.66
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 154.66
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P11",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 171.64
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": -8.63
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": -8.63
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P12",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "NOVICE_SCHEDULE_MISALIGNMENT",
+   "treatment": 291.59
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 38.56
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 38.56
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P13",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "NOVICE_SCHEDULE_MISALIGNMENT",
+   "treatment": 730.61
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 323.07
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 323.07
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P14",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 0,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 0,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 0,
+  "arm_inc_mode": "SOLO_ARITHMETIC_SLIP",
+  "arm_collab_mode": "COLLAB_OVERRIDE_SHALLOW_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "NOVICE_SCHEDULE_MISALIGNMENT",
+   "treatment": 432.78
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 135.85
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 131.26
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P15",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 372.06
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 89.05
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 89.05
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P16",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 750.95
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 469.34
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 469.34
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P17",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.86,
+  "arm_critic_status": "UNPARSED_ANNEX_FIELD_ESCALATED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_OVERRIDE_SHALLOW_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "NOVICE_SCHEDULE_MISALIGNMENT",
+   "treatment": 304.56
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 60.89
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 60.89
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P18",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_ACCEPT_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 693.54
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 693.54
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 693.54
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P19",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_ACCEPT_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "NOVICE_SCHEDULE_MISALIGNMENT",
+   "treatment": 424.59
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 352.44
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 352.44
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P20",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.03,
+  "arm_critic_status": "CLEAN_ROUTINE",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "SOLO_EXACT",
+  "arm_collab_mode": "COLLAB_ACCEPT_DEEP_AUDIT",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "NOVICE_SCHEDULE_MISALIGNMENT",
+   "treatment": 775.91
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 641.54
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 641.54
+  }
+ }
+]

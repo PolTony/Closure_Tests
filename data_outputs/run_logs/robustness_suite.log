@@ -1,0 +1,63 @@
+  [base] registered_design              9.1s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [A_montecarlo] universe_r01                   8.6s  E2E v3= 81.2  Tier2 v2/v3= 52.0/ 92.7  IncSolo= 91.7  Collab= 98.9  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 7.2
+  [A_montecarlo] universe_r02                   8.3s  E2E v3= 81.1  Tier2 v2/v3= 53.1/ 92.1  IncSolo= 90.3  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [A_montecarlo] universe_r03                   7.2s  E2E v3= 81.1  Tier2 v2/v3= 50.3/ 92.1  IncSolo= 89.0  Collab= 98.9  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 8.1
+  [A_montecarlo] universe_r04                   8.1s  E2E v3= 81.3  Tier2 v2/v3= 48.6/ 93.2  IncSolo= 89.0  Collab= 99.2  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 7.2
+  [A_montecarlo] universe_r05                   7.7s  E2E v3= 81.4  Tier2 v2/v3= 48.0/ 93.8  IncSolo= 89.1  Collab= 99.0  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 8.3
+  [A_montecarlo] universe_r06                   7.7s  E2E v3= 81.3  Tier2 v2/v3= 53.1/ 93.2  IncSolo= 89.1  Collab= 98.9  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.1
+  [A_montecarlo] universe_r07                   8.0s  E2E v3= 80.9  Tier2 v2/v3= 47.5/ 91.0  IncSolo= 90.9  Collab= 99.3  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 7.2
+  [A_montecarlo] universe_r08                   7.5s  E2E v3= 80.7  Tier2 v2/v3= 48.0/ 89.8  IncSolo= 89.0  Collab= 99.3  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 8.3
+  [A_montecarlo] universe_r09                   7.9s  E2E v3= 80.8  Tier2 v2/v3= 42.9/ 90.4  IncSolo= 89.9  Collab= 99.5  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 5.8
+  [A_montecarlo] universe_r10                   7.5s  E2E v3= 81.0  Tier2 v2/v3= 49.2/ 91.5  IncSolo= 88.8  Collab= 99.0  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 8.6
+  [B_archive] archive_20                     3.3s  E2E v3= 69.2  Tier2 v2/v3= 19.2/ 19.2  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/34.2/44.2  CoreSQErr= 6.9
+  [B_archive] archive_40                     5.5s  E2E v3= 78.8  Tier2 v2/v3= 48.0/ 78.0  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/43.9/34.4  CoreSQErr= 6.4
+  [B_archive] archive_80                     7.6s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [B_archive] archive_160                   13.8s  E2E v3= 82.2  Tier2 v2/v3= 54.8/ 98.9  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [B_archive] archive_320                   19.0s  E2E v3= 82.2  Tier2 v2/v3= 48.0/ 98.9  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [C_grammar] grammar_G1_only                4.7s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [C_grammar] grammar_without_G1_reparam     7.0s  E2E v3= 80.8  Tier2 v2/v3= 49.2/ 90.4  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [C_grammar] grammar_without_G1_family      5.8s  E2E v3= 66.0  Tier2 v2/v3=  0.0/  0.0  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/23.6/54.7  CoreSQErr= 8.3
+  [C_grammar] selection_train_validation     6.7s  E2E v3= 74.5  Tier2 v2/v3= 32.2/ 52.0  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/35.8/42.5  CoreSQErr= 7.2
+  [C_grammar] coef_grid_1dp                  7.7s  E2E v3= 66.0  Tier2 v2/v3=  0.0/  0.0  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/23.6/54.7  CoreSQErr= 8.3
+  [C_grammar] coef_grid_3dp                  8.2s  E2E v3= 81.0  Tier2 v2/v3= 49.7/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [C_grammar] triple_sample_12              24.5s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [D_institutions] liability_x0.5                 7.4s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=32.2/34.2/33.6  CoreSQErr= 6.4
+  [D_institutions] liability_x2.0                 7.6s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [D_institutions] penalty_x0.0                   7.7s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=38.1/28.3/33.6  CoreSQErr=13.6
+  [D_institutions] penalty_x0.5                   7.6s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [D_institutions] penalty_x2.0                   7.1s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [D_institutions] review_frac_0.15               7.6s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [D_institutions] review_frac_0.35               8.6s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=23.9/42.5/33.6  CoreSQErr= 6.4
+  [E_behaviour] solo_slip_base_595.0           7.9s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 83.0  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 8.1
+  [E_behaviour] solo_slip_base_675.0           7.7s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 96.7  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 5.0
+  [E_behaviour] audit_depth_base_430.0         7.8s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.2  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.7
+  [E_behaviour] audit_depth_base_510.0         7.7s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.5  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 5.8
+  [E_behaviour] u_p_scale_x0.5                 7.5s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=32.2/34.2/33.6  CoreSQErr= 6.4
+  [E_behaviour] u_p_scale_x1.5                 8.1s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [E_behaviour] override_manual               10.8s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 98.2  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.7
+  [E_behaviour] u_p_clean_realised_0.064       8.7s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 90.6  Collab= 99.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [F_design] decoy_notes_0.1                7.6s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 88.5  Collab= 98.4  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [F_design] decoy_notes_0.25               7.3s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 85.2  Collab= 96.5  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr= 6.4
+  [F_design] silent_gate_insufficient       7.4s  E2E v3= 81.0  Tier2 v2/v3= 50.8/ 91.5  IncSolo= 88.5  Collab= 97.6  Core poach/settle/gate=21.7/44.7/33.6  CoreSQErr=10.3
+  [F_design] eval_100_per_task              9.5s  E2E v3= 80.8  Tier2 v2/v3= 49.2/ 90.4  IncSolo= 90.3  Collab= 99.1  Core poach/settle/gate=21.3/44.4/34.2  CoreSQErr= 7.8
+
+MONTE CARLO OVER PACKET UNIVERSES (n = 10): mean +/- SD of headline cells
+  E2E_Novice       registered =   33.40   MC mean =   32.88   SD =  1.29   range = [30.9, 34.4]
+  E2E_Tool_v1      registered =   66.00   MC mean =   66.00   SD =  0.00   range = [66.0, 66.0]
+  E2E_Tool_v2      registered =   74.40   MC mean =   74.10   SD =  0.48   range = [73.1, 74.7]
+  E2E_Tool_v3      registered =   81.00   MC mean =   81.08   SD =  0.23   range = [80.7, 81.4]
+  E2E_Inc_Solo     registered =   90.60   MC mean =   89.68   SD =  0.99   range = [88.8, 91.7]
+  E2E_Collab       registered =   99.40   MC mean =   99.14   SD =  0.23   range = [98.9, 99.5]
+  Tier2_Tool_v2    registered =   50.80   MC mean =   49.27   SD =  3.08   range = [42.9, 53.1]
+  Tier2_Tool_v3    registered =   91.50   MC mean =   91.98   SD =  1.30   range = [89.8, 93.8]
+  Per_Poach        registered =   96.40   MC mean =   96.40   SD =  0.00   range = [96.4, 96.4]
+  Buf_Poach        registered =   37.20   MC mean =   37.20   SD =  0.00   range = [37.2, 37.2]
+  Core_Poach       registered =   21.70   MC mean =   21.70   SD =  0.00   range = [21.7, 21.7]
+  Buf_Settle       registered =   55.30   MC mean =   55.30   SD =  0.00   range = [55.3, 55.3]
+  Core_Settle      registered =   44.70   MC mean =   44.70   SD =  0.00   range = [44.7, 44.7]
+  Core_Gate        registered =   33.60   MC mean =   33.60   SD =  0.00   range = [33.6, 33.6]
+  Core_SQErr       registered =    6.40   MC mean =    7.32   SD =  0.99   range = [5.8, 8.6]
+  Core_CF2Err      registered =   46.10   MC mean =   46.11   SD =  0.55   range = [45.3, 47.2]
+  ISR_beta_auto    registered =   -0.53   MC mean =   -0.48   SD =  0.02   range = [-0.5, -0.5]
+
+wrote data_outputs/robustness_summary.csv (42 runs)

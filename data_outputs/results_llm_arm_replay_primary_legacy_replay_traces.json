@@ -1,0 +1,7022 @@
+[
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "override_flag_appears_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 480.81
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 480.81
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 480.81
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "handled_with_minor_collision_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 772.65
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 431.34
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 431.34
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P03",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 447.34
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 149.6
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 149.6
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P04",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 560.78
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 202.22
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 202.22
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P05",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "UNHANDLED_COEFFICIENT_FLAGGED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 528.18
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 180.73
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 180.73
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P06",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "UNHANDLED_CROSS_DOC_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 484.86
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 163.44
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 163.44
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P07",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.8,
+  "arm_critic_status": "unhandled_coupled_coefficient",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 793.41
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 475.35
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 475.35
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P08",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_cross_document_coefficient",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 629.62
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 278.99
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 278.99
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 580.48
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 580.48
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 580.48
+  }
+ },
+ {
+  "task_id": "LAW-C1",
+  "occ_title": "Lawyers",
+  "ring": "Inner_Core",
+  "packet_id": "LAW-C1-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 455.07
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 455.07
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 455.07
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.18,
+  "arm_critic_status": "override_flag_appears_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 248.56
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 248.56
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 248.56
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P02",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.3,
+  "arm_critic_status": "override_flag_apparently_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 417.59
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 417.59
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 417.59
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "no_visible_anomaly_tier_matched",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 762.48
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 508.65
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 508.65
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P04",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.3,
+  "arm_critic_status": "protocol_exception_unclear_handling",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 595.99
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 395.96
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 395.96
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P05",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 0,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "UNHANDLED_LATENT_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 856.88
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 418.44
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 418.44
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 455.63
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 455.63
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 455.63
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 825.88
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 825.88
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 825.88
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 397.48
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 397.48
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 397.48
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 592.85
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 592.85
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 592.85
+  }
+ },
+ {
+  "task_id": "LAW-B2",
+  "occ_title": "Lawyers",
+  "ring": "Middle_Buffer",
+  "packet_id": "LAW-B2-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 403.46
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 403.46
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 403.46
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.2,
+  "arm_critic_status": "override_apparently_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 388.27
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 388.27
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 388.27
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P02",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.3,
+  "arm_critic_status": "override_flag_apparently_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 542.37
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 542.37
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 542.37
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P03",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 273.32
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 273.32
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 273.32
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P04",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 587.73
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 587.73
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 587.73
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 694.91
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 694.91
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 694.91
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 453.48
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 453.48
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 453.48
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 848.0
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 848.0
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 848.0
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 564.56
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 564.56
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 564.56
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 422.01
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 422.01
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 422.01
+  }
+ },
+ {
+  "task_id": "LAW-P3",
+  "occ_title": "Lawyers",
+  "ring": "Outer_Periphery",
+  "packet_id": "LAW-P3-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 364.3
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 364.3
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 364.3
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.15,
+  "arm_critic_status": "override_flag_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 510.73
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 510.73
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 510.73
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.35,
+  "arm_critic_status": "possible_collision_vs_carveout_mismatch",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 313.02
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 206.27
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 206.27
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.55,
+  "arm_critic_status": "protocol_exception_possibly_unapplied",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 657.49
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 354.35
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 354.35
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P04",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 0,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_latent_coefficient",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 200.9
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": -12.69
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": -12.69
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P05",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.82,
+  "arm_critic_status": "UNHANDLED_CROSS_DOC_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 389.58
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 212.56
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 212.56
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P06",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_coefficient_base_haircut",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 455.33
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 239.74
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 239.74
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 317.39
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 317.39
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 317.39
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 181.85
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 181.85
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 181.85
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 480.99
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 480.99
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 480.99
+  }
+ },
+ {
+  "task_id": "PAR-C1",
+  "occ_title": "Paralegals",
+  "ring": "Inner_Core",
+  "packet_id": "PAR-C1-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 573.66
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 573.66
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 573.66
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.2,
+  "arm_critic_status": "override_flag_apparently_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 494.01
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 494.01
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 494.01
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "annex_handled_collision_unverified",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 486.67
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 299.3
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 299.3
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.2,
+  "arm_critic_status": "annex_handled_consistent",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 557.4
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 343.9
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_PIECEWISE_CARVEOUT_ADJUSTMENT",
+   "treatment": 343.9
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P04",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_coefficient_flagged",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 556.75
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 192.56
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_FIDUCIARY_SUBROGATION_REVERSAL",
+   "treatment": 192.56
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 700.75
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 700.75
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 700.75
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 471.95
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 471.95
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 471.95
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 558.3
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 558.3
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 558.3
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 456.0
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 456.0
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 456.0
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 368.89
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 368.89
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 368.89
+  }
+ },
+ {
+  "task_id": "PAR-B2",
+  "occ_title": "Paralegals",
+  "ring": "Middle_Buffer",
+  "packet_id": "PAR-B2-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 440.41
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 440.41
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 440.41
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.15,
+  "arm_critic_status": "override_handled_consistent",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 422.79
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 422.79
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_EXPLICIT_VENUE_OVERRIDE",
+   "treatment": 422.79
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P02",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 694.49
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 694.49
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 694.49
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P03",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 831.66
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 831.66
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 831.66
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P04",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 325.51
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 325.51
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 325.51
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 225.32
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 225.32
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 225.32
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 351.98
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 351.98
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 351.98
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 643.31
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 643.31
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 643.31
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 638.96
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 638.96
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "LEGAL_STANDARD_ESCROW_RELEASE",
+   "treatment": 638.96
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 533.3
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 533.3
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 533.3
+  }
+ },
+ {
+  "task_id": "PAR-P3",
+  "occ_title": "Paralegals",
+  "ring": "Outer_Periphery",
+  "packet_id": "PAR-P3-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 410.27
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 410.27
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "LEGAL_CAPPED_INDEMNITY_SURCHARGE",
+   "treatment": 410.27
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P01",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.58,
+  "arm_critic_status": "UNHANDLED_PROTOCOL_EXCEPTION_SUSPECTED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 177.15
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 94.14
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 94.14
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.55,
+  "arm_critic_status": "unaddressed_protocol_exception",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 580.06
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 417.75
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 417.75
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P03",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 360.0
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 189.77
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 189.77
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P04",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 523.08
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 224.85
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 224.85
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P05",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.8,
+  "arm_critic_status": "UNHANDLED_LATENT_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 393.24
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 141.86
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 141.86
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P06",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "UNHANDLED_LATENT_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 603.23
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 261.33
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 261.33
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P07",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.82,
+  "arm_critic_status": "UNHANDLED_LATENT_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 488.09
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 232.94
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 232.94
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P08",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "UNHANDLED_LATENT_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 540.48
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 303.14
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 303.14
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 656.87
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 656.87
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 656.87
+  }
+ },
+ {
+  "task_id": "CPA-C1",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Inner_Core",
+  "packet_id": "CPA-C1-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 658.53
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 658.53
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 658.53
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.62,
+  "arm_critic_status": "explicit_override_possibly_unapplied",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_EXPLICIT_SUBSEQUENT_EVENT",
+   "treatment": 388.18
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_EXPLICIT_SUBSEQUENT_EVENT",
+   "treatment": 388.18
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_EXPLICIT_SUBSEQUENT_EVENT",
+   "treatment": 388.18
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "annex_minimal_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 500.94
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 227.15
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 227.15
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.3,
+  "arm_critic_status": "handled_with_piecewise_collision_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 308.47
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 159.08
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 159.08
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P04",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 0,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.82,
+  "arm_critic_status": "unhandled_coefficient_base_haircut",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 611.32
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 271.33
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC810_VIE_GOING_CONCERN_DERECOGNITION",
+   "treatment": 271.33
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "clean_annex_no_override",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 233.8
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 233.8
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 233.8
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 431.31
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 431.31
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 431.31
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 420.75
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 420.75
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 420.75
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 228.6
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 228.6
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 228.6
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 223.74
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 223.74
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 223.74
+  }
+ },
+ {
+  "task_id": "CPA-B2",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Middle_Buffer",
+  "packet_id": "CPA-B2-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 430.85
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 430.85
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 430.85
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.62,
+  "arm_critic_status": "EXPLICIT_OVERRIDE_POSSIBLY_IGNORED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_EXPLICIT_SUBSEQUENT_EVENT",
+   "treatment": 69.61
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_EXPLICIT_SUBSEQUENT_EVENT",
+   "treatment": 69.61
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_EXPLICIT_SUBSEQUENT_EVENT",
+   "treatment": 69.61
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 0,
+  "arm_u_p": 0.62,
+  "arm_critic_status": "protocol_exception_possibly_ignored",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 177.97
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 19.24
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_PIECEWISE_TAX_VALUATION_ALLOWANCE",
+   "treatment": 19.24
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P03",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 263.04
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 263.04
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 263.04
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P04",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 192.74
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 192.74
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 192.74
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 450.59
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 450.59
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 450.59
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 421.26
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 421.26
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 421.26
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 331.79
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 331.79
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 331.79
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 368.3
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 368.3
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 368.3
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 510.8
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 510.8
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CPA_UNQUALIFIED_LEDGER_RECON",
+   "treatment": 510.8
+  }
+ },
+ {
+  "task_id": "CPA-P3",
+  "occ_title": "Accountants_Auditors",
+  "ring": "Outer_Periphery",
+  "packet_id": "CPA-P3-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 567.36
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 567.36
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CPA_ASC606_DEFERRAL_VALUATION",
+   "treatment": 567.36
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P01",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "annex_handled_minor_collision_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 883.16
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 584.06
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 584.06
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "annex_field_handled_minor_collision_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 915.87
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 681.46
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 681.46
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "no_obvious_anomaly_piecewise_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 617.68
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 463.43
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 463.43
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P04",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 0,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 0,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 781.92
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_CSA_CONVEXITY_COLLATERAL_CALL",
+   "treatment": 427.24
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_CSA_CONVEXITY_COLLATERAL_CALL",
+   "treatment": 427.24
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P05",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 0,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_coefficient_base_haircut",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 491.69
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_CSA_CONVEXITY_COLLATERAL_CALL",
+   "treatment": 271.47
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_CSA_CONVEXITY_COLLATERAL_CALL",
+   "treatment": 271.47
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P06",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_latent_coefficient",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 749.47
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_CSA_CONVEXITY_COLLATERAL_CALL",
+   "treatment": 483.51
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_CSA_CONVEXITY_COLLATERAL_CALL",
+   "treatment": 483.51
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P07",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.82,
+  "arm_critic_status": "UNHANDLED_LATENT_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 228.86
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_CSA_CONVEXITY_COLLATERAL_CALL",
+   "treatment": 18.49
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_CSA_CONVEXITY_COLLATERAL_CALL",
+   "treatment": 18.49
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 526.09
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 526.09
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 526.09
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "CLEAN_ANNEX_NO_CONFLICT",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 780.61
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 780.61
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 780.61
+  }
+ },
+ {
+  "task_id": "FIN-C1",
+  "occ_title": "Financial_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "FIN-C1-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.07,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 536.19
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 536.19
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 536.19
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.35,
+  "arm_critic_status": "override_flag_possibly_handled",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 408.04
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 408.05
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 408.05
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P02",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.62,
+  "arm_critic_status": "EXPLICIT_OVERRIDE_POSSIBLY_UNHANDLED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 494.71
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 494.71
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 494.71
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.2,
+  "arm_critic_status": "annex_handled_no_visible_anomaly",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 802.73
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 418.42
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 418.42
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P04",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "annex_handled_minor_collision_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 634.54
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 363.44
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_RATCHET_LIQUIDITY_HAIRCUT",
+   "treatment": 363.44
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 660.07
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 660.07
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 660.07
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 651.7
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 651.7
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 651.7
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 700.22
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 700.22
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 700.22
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.05,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 370.47
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 370.47
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 370.47
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 300.24
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 300.24
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 300.24
+  }
+ },
+ {
+  "task_id": "FIN-B2",
+  "occ_title": "Financial_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "FIN-B2-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.05,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 366.47
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 366.47
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 366.47
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.62,
+  "arm_critic_status": "override_flag_possibly_unhandled",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 265.83
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 265.83
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_EXPLICIT_COVENANT_SWEEP",
+   "treatment": 265.83
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P02",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 576.97
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 576.97
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 576.97
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P03",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "CLEAN_ANNEX_NO_CONFLICT",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 401.45
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 401.45
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 401.45
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P04",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "CLEAN_ANNEX_NO_CONFLICT",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 472.37
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 472.37
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 472.38
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.07,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 510.5
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 510.5
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 510.5
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.05,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 445.41
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 445.41
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 445.41
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 984.15
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 984.15
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 984.15
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 874.67
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 874.67
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 874.67
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 905.06
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 905.06
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "FINANCE_BASELINE_DCF_APPROVAL",
+   "treatment": 905.06
+  }
+ },
+ {
+  "task_id": "FIN-P3",
+  "occ_title": "Financial_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "FIN-P3-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 608.66
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 608.66
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "FINANCE_SPREAD_STRESS_VALUATION",
+   "treatment": 608.66
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.72,
+  "arm_critic_status": "EXPLICIT_OVERRIDE_UNHANDLED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 275.85
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 275.85
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 275.85
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.3,
+  "arm_critic_status": "sparse_annex_piecewise_collision_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 686.14
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_STEPWISE_ORGAN_TAPER",
+   "treatment": 358.73
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_STEPWISE_ORGAN_TAPER",
+   "treatment": 358.73
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P03",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 320.53
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 33.95
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 33.95
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P04",
+  "complexity_tier": 3,
+  "is_silent": true,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 784.35
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 328.74
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 328.74
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P05",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.8,
+  "arm_critic_status": "unhandled_latent_coefficient",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 370.28
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": -8.1
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": -8.1
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P06",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_coefficient_flagged",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 279.38
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 23.58
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 23.58
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P07",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_cross_document_coefficient",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 362.79
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 36.81
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 36.81
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P08",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.8,
+  "arm_critic_status": "unhandled_coefficient_base_haircut",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 318.89
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 98.26
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 98.26
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.07,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 621.31
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 621.31
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 621.31
+  }
+ },
+ {
+  "task_id": "NP-C1",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Inner_Core",
+  "packet_id": "NP-C1-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_conflict_annex",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 255.25
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 255.25
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 255.25
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.55,
+  "arm_critic_status": "explicit_override_flag_possibly_unapplied",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 319.89
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 319.89
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 319.89
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.72,
+  "arm_critic_status": "UNHANDLED_PROTOCOL_EXCEPTION",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 836.66
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_STEPWISE_ORGAN_TAPER",
+   "treatment": 383.21
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_STEPWISE_ORGAN_TAPER",
+   "treatment": 383.21
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.8,
+  "arm_critic_status": "unhandled_protocol_exception_field",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 248.77
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_STEPWISE_ORGAN_TAPER",
+   "treatment": 55.18
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_STEPWISE_ORGAN_TAPER",
+   "treatment": 55.18
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P04",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.8,
+  "arm_critic_status": "unhandled_coefficient_base_haircut",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 795.41
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 278.61
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 278.61
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P05",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "UNHANDLED_CROSS_DOC_COEFFICIENT",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 461.24
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 207.48
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_CYP3A4_POLYPHARMACY_WASHOUT",
+   "treatment": 207.48
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 307.58
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 307.58
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 307.58
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 467.16
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 467.16
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 467.16
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 220.96
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 220.96
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 220.96
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 593.63
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 593.63
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 593.63
+  }
+ },
+ {
+  "task_id": "NP-B2",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Middle_Buffer",
+  "packet_id": "NP-B2-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 333.87
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 333.87
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 333.87
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.75,
+  "arm_critic_status": "EXPLICIT_OVERRIDE_UNHANDLED",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 132.89
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 132.89
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 132.89
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P02",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.75,
+  "arm_critic_status": "explicit_override_likely_unhandled",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 82.78
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 82.78
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_ACUTE_CONTRAINDICATION_HOLD",
+   "treatment": 82.78
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P03",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 762.0
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 762.0
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 762.0
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P04",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 711.45
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 711.45
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 711.45
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 507.07
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 507.07
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 507.07
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 786.69
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 786.69
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 786.69
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 511.36
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 511.36
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "CLINICAL_RENAL_ADJUSTED_TITRATION",
+   "treatment": 511.36
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 781.92
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 781.92
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 781.92
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 584.39
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 584.39
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 584.39
+  }
+ },
+ {
+  "task_id": "NP-P3",
+  "occ_title": "Nurse_Practitioners",
+  "ring": "Outer_Periphery",
+  "packet_id": "NP-P3-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 624.73
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 624.73
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "CLINICAL_MAINTENANCE_PROTOCOL",
+   "treatment": 624.73
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P01",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.25,
+  "arm_critic_status": "no_obvious_anomaly_minor_exception_flag",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 273.36
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 82.65
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 82.65
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.18,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 389.14
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 274.13
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 274.13
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.22,
+  "arm_critic_status": "annex_minimal_appears_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 493.42
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 228.96
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 228.96
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P04",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.8,
+  "arm_critic_status": "unhandled_coupled_coefficient",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 506.63
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_QUORUM_SPLIT_BRAIN_COMPENSATION",
+   "treatment": 322.08
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_QUORUM_SPLIT_BRAIN_COMPENSATION",
+   "treatment": 322.08
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P05",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_coefficient_base_haircut",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 342.39
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_QUORUM_SPLIT_BRAIN_COMPENSATION",
+   "treatment": 158.04
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_QUORUM_SPLIT_BRAIN_COMPENSATION",
+   "treatment": 158.04
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P06",
+  "complexity_tier": 3,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 0,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.85,
+  "arm_critic_status": "unhandled_coefficient_base_haircut",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 625.41
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_QUORUM_SPLIT_BRAIN_COMPENSATION",
+   "treatment": 287.33
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_QUORUM_SPLIT_BRAIN_COMPENSATION",
+   "treatment": 287.33
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 563.59
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 563.59
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 563.59
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 506.85
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 506.85
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 506.85
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.05,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 783.24
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 783.24
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 783.24
+  }
+ },
+ {
+  "task_id": "SQA-C1",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Inner_Core",
+  "packet_id": "SQA-C1-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 656.4
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 656.4
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 656.4
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.58,
+  "arm_critic_status": "override_flag_possibly_unhandled",
+  "arm_governance": "INCUMBENT_FULL_GATEKEEPING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_EXPLICIT_SCHEMA_ROLLBACK",
+   "treatment": 75.25
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_EXPLICIT_SCHEMA_ROLLBACK",
+   "treatment": 75.25
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_EXPLICIT_SCHEMA_ROLLBACK",
+   "treatment": 75.25
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P02",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.3,
+  "arm_critic_status": "handled_with_boundary_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 386.6
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 283.03
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 283.03
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P03",
+  "complexity_tier": 2,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 0,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.3,
+  "arm_critic_status": "handled_with_boundary_risk",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_OVERRIDE",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 541.8
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 392.55
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_PIECEWISE_RETRY_CIRCUIT_BREAKER",
+   "treatment": 392.55
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P04",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_anomaly",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 797.17
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 797.17
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 797.17
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 464.34
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 464.34
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 464.34
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.08,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 421.7
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 421.7
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 421.7
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 487.99
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 487.99
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 487.99
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 574.03
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 574.03
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 574.03
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 255.35
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 255.35
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 255.35
+  }
+ },
+ {
+  "task_id": "SQA-B2",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Middle_Buffer",
+  "packet_id": "SQA-B2-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "NO_CONFLICT_ANNEX_CLEAN",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 382.89
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 382.89
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__THRESHOLD_BREACH",
+   "inference": "SWE_BACKPRESSURE_THROTTLE_SCALE",
+   "treatment": 382.89
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P01",
+  "complexity_tier": 1,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.2,
+  "arm_critic_status": "override_flag_likely_handled",
+  "arm_governance": "ACCOUNTABILITY_SETTLEMENT",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_EXPLICIT_SCHEMA_ROLLBACK",
+   "treatment": 92.04
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_EXPLICIT_SCHEMA_ROLLBACK",
+   "treatment": 92.04
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_EXPLICIT_SCHEMA_ROLLBACK",
+   "treatment": 92.04
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P02",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 600.23
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 600.23
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 600.23
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P03",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.07,
+  "arm_critic_status": "NO_ANOMALY_DETECTED",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 282.46
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 282.46
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 282.46
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P04",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 190.54
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 190.54
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 190.54
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P05",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 643.82
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 643.82
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 643.82
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P06",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 367.63
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 367.63
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 367.63
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P07",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.06,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 487.92
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 487.92
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 487.92
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P08",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 0,
+  "base_tool_v3": 1,
+  "base_inc_solo": 0,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 0,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.07,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 980.81
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 808.81
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 808.81
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P09",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "clean_annex_no_conflict",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 413.72
+  },
+  "arm_solo_out": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 413.72
+  },
+  "gt": {
+   "diagnosis": "MODERATE_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 413.72
+  }
+ },
+ {
+  "task_id": "SQA-P3",
+  "occ_title": "Software_QA_Analysts",
+  "ring": "Outer_Periphery",
+  "packet_id": "SQA-P3-P10",
+  "complexity_tier": 0,
+  "is_silent": false,
+  "base_novice": 1,
+  "base_tool_v3": 1,
+  "base_inc_solo": 1,
+  "base_collab": 1,
+  "base_governance": "DIRECT_CHALLENGER_POACHING",
+  "base_sq_accurate": 1,
+  "arm_novice": 1,
+  "arm_tool_v3": 1,
+  "arm_inc_solo": 1,
+  "arm_collab": 1,
+  "arm_u_p": 0.1,
+  "arm_critic_status": "no_anomaly_detected",
+  "arm_governance": "DIRECT_CHALLENGER_POACHING",
+  "arm_sq_accurate": 1,
+  "arm_inc_mode": "LLM_SOLO",
+  "arm_collab_mode": "LLM_COLLAB_ACCEPT_TOOL",
+  "arm_novice_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 784.26
+  },
+  "arm_solo_out": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 784.26
+  },
+  "gt": {
+   "diagnosis": "HIGH_EXPOSURE__WITHIN_TOLERANCE",
+   "inference": "SWE_BASELINE_SLA_PASS",
+   "treatment": 784.26
+  }
+ }
+]

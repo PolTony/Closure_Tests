@@ -1,0 +1,84 @@
+sourced challengers loaded for 17 occupations
+  LAW-C1 done (Paralegals_and_Legal_Assistants, sourced:s495 dyad)
+  LAW-B2 done (Paralegals_and_Legal_Assistants, sourced:s495 dyad)
+  LAW-P3 done (Paralegals_and_Legal_Assistants, sourced:s495 dyad)
+  PAR-C1 done (Legal_Secretaries_and_Administrative_Assistants, sourced:proposed)
+  PAR-B2 done (Legal_Secretaries_and_Administrative_Assistants, sourced:proposed)
+  PAR-P3 done (Legal_Secretaries_and_Administrative_Assistants, sourced:proposed)
+  CPA-C1 done (Bookkeeping,_Accounting,_and_Auditing_Clerks, sourced:s495 dyad)
+  CPA-B2 done (Bookkeeping,_Accounting,_and_Auditing_Clerks, sourced:s495 dyad)
+  CPA-P3 done (Bookkeeping,_Accounting,_and_Auditing_Clerks, sourced:s495 dyad)
+  FIN-C1 done (Budget_Analysts, sourced:proposed)
+  FIN-B2 done (Budget_Analysts, sourced:proposed)
+  FIN-P3 done (Budget_Analysts, sourced:proposed)
+  NP-C1 done (Registered_Nurses, sourced:proposed (NP is itse)
+  NP-B2 done (Registered_Nurses, sourced:proposed (NP is itse)
+  NP-P3 done (Registered_Nurses, sourced:proposed (NP is itse)
+  SQA-C1 done (Computer_User_Support_Specialists, sourced:proposed)
+  SQA-B2 done (Computer_User_Support_Specialists, sourced:proposed)
+  SQA-P3 done (Computer_User_Support_Specialists, sourced:proposed)
+  OPS-C1 done (First-Line_Supervisors_of_Office_and_Administrative_Support_Workers, sourced:proposed)
+  OPS-B2 done (First-Line_Supervisors_of_Office_and_Administrative_Support_Workers, sourced:proposed)
+  OPS-P3 done (First-Line_Supervisors_of_Office_and_Administrative_Support_Workers, sourced:proposed)
+  MGT-C1 done (Market_Research_Analysts_and_Marketing_Specialists, sourced:proposed)
+  MGT-B2 done (Market_Research_Analysts_and_Marketing_Specialists, sourced:proposed)
+  MGT-P3 done (Market_Research_Analysts_and_Marketing_Specialists, sourced:proposed)
+  PSY-C1 done (Clinical_Counseling_Psychologists_assistant, generic)
+  PSY-B2 done (Clinical_Counseling_Psychologists_assistant, generic)
+  PSY-P3 done (Clinical_Counseling_Psychologists_assistant, generic)
+  RN-C1 done (Licensed_Practical_and_Licensed_Vocational_Nurses, sourced:proposed)
+  RN-B2 done (Licensed_Practical_and_Licensed_Vocational_Nurses, sourced:proposed)
+  RN-P3 done (Licensed_Practical_and_Licensed_Vocational_Nurses, sourced:proposed)
+  SYS-C1 done (Computer_User_Support_Specialists, sourced:proposed)
+  SYS-B2 done (Computer_User_Support_Specialists, sourced:proposed)
+  SYS-P3 done (Computer_User_Support_Specialists, sourced:proposed)
+  TAX-C1 done (Tax_Examiners_Revenue_Agents_assistant, generic)
+  TAX-B2 done (Tax_Examiners_Revenue_Agents_assistant, generic)
+  TAX-P3 done (Tax_Examiners_Revenue_Agents_assistant, generic)
+  ECO-C1 done (Social_Science_Research_Assistants, sourced:proposed)
+  ECO-B2 done (Social_Science_Research_Assistants, sourced:proposed)
+  ECO-P3 done (Social_Science_Research_Assistants, sourced:proposed)
+  ENG-C1 done (Civil_Engineering_Technologists_and_Technicians, sourced:s495 dyad)
+  ENG-B2 done (Civil_Engineering_Technologists_and_Technicians, sourced:s495 dyad)
+  ENG-P3 done (Civil_Engineering_Technologists_and_Technicians, sourced:s495 dyad)
+  ARC-C1 done (Architectural_and_Civil_Drafters, sourced:s495 dyad)
+  ARC-B2 done (Architectural_and_Civil_Drafters, sourced:s495 dyad)
+  ARC-P3 done (Architectural_and_Civil_Drafters, sourced:s495 dyad)
+  EDU-C1 done (Business_Teachers_Postsecondary_assistant, generic)
+  EDU-B2 done (Business_Teachers_Postsecondary_assistant, generic)
+  EDU-P3 done (Business_Teachers_Postsecondary_assistant, generic)
+  HRS-C1 done (Human_Resources_Assistants,_Except_Payroll_and_Timekeeping, sourced:proposed)
+  HRS-B2 done (Human_Resources_Assistants,_Except_Payroll_and_Timekeeping, sourced:proposed)
+  HRS-P3 done (Human_Resources_Assistants,_Except_Payroll_and_Timekeeping, sourced:proposed)
+  SEC-C1 done (Secretaries_and_Administrative_Assistants,_Except_Legal,_Medical,_and_Executive, sourced:proposed)
+  SEC-B2 done (Secretaries_and_Administrative_Assistants,_Except_Legal,_Medical,_and_Executive, sourced:proposed)
+  SEC-P3 done (Secretaries_and_Administrative_Assistants,_Except_Legal,_Medical,_and_Executive, sourced:proposed)
+
+======================================================================================================================================================
+TABLE 10: BUMPING CHAINS — two professions per task; arrangement shares and hours by ring and tool wave (v0 = before any tool)
+======================================================================================================================================================
+Ring             | wave |          POACH |     SETTLE_INC |           GATE |      SUB_ALONE | SUB_SUPERVISED |     SETTLE_SUB | Inc hrs | Sub hrs | Error
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Outer_Periphery  |   v0 |           0.0% |           0.0% |           0.0% |         100.0% |           0.0% |           0.0% |    n/a |    100 | 11.7%
+Outer_Periphery  |   v1 |          95.3% |           0.6% |           0.0% |           4.2% |           0.0% |           0.0% |    n/a |      4 |  0.3%
+Outer_Periphery  |   v2 |          95.3% |           0.8% |           0.0% |           3.9% |           0.0% |           0.0% |    n/a |      4 |  0.0%
+Outer_Periphery  |   v3 |          95.3% |           0.8% |           0.0% |           3.9% |           0.0% |           0.0% |    n/a |      4 |  0.0%
+Middle_Buffer    |   v0 |           0.0% |           0.0% |           0.0% |          55.6% |          44.4% |           0.0% |    100 |    100 | 10.8%
+Middle_Buffer    |   v1 |          37.2% |          31.4% |           0.0% |          15.0% |          16.4% |           0.0% |    104 |     27 |  3.3%
+Middle_Buffer    |   v2 |          37.2% |          51.4% |           0.0% |           6.4% |           5.0% |           0.0% |    115 |      6 |  2.2%
+Middle_Buffer    |   v3 |          37.2% |          51.4% |           0.0% |           6.4% |           5.0% |           0.0% |    115 |      6 |  2.2%
+Inner_Core       |   v0 |           0.0% |           0.0% |          11.1% |          38.9% |          50.0% |           0.0% |    100 |    100 |  9.2%
+Inner_Core       |   v1 |          21.7% |          21.9% |           6.4% |          21.9% |          28.1% |           0.0% |     91 |     42 |  9.4%
+Inner_Core       |   v2 |          21.7% |          44.7% |           4.4% |          11.7% |          17.5% |           0.0% |     94 |     11 |  6.4%
+Inner_Core       |   v3 |          21.7% |          44.7% |           4.4% |          11.7% |          17.5% |           0.0% |     94 |     11 |  6.4%
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Inc hrs / Sub hrs = incumbent and subordinate hours per packet, indexed to 100 at wave v0 (the pre-tool division of labour); n/a when v0 hours are zero.
+
+Who loses first (hours at v3 as a share of hours at v0):
+  Outer_Periphery  incumbent   n/a (no pre-tool hours)   subordinate     4%
+  Middle_Buffer    incumbent   115%   subordinate     6%
+  Inner_Core       incumbent    94%   subordinate    11%
+
+Named pairs (hours at v3 as a share of v0):
+  Lawyers / Paralegals: incumbent   100%   subordinate     7%
+  Nurse_Practitioners / Registered_Nurses: incumbent   100%   subordinate     7%

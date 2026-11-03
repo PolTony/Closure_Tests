@@ -1,0 +1,25 @@
+family,tier2_form,grammar,task_id,ring,tier2_n,tier2_v3_correct,v2_handler_template,v3_split,A_Base_Pct,A_Tool_v1_Pct,A_Tool_v2_Pct,A_Tool_v3_Pct,A_Inc_Solo_Pct
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,full,ADD-LAW-C1,Inner_Core,3,3,G2_add_severity,V2>=0.1198,5.0,20.0,25.0,35.0,95.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,full,ADD-LAW-B2,Middle_Buffer,5,5,G2_add_severity,V2>=0.1259,30.0,65.0,80.0,90.0,85.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,full,ADD-LAW-P3,Outer_Periphery,1,0,G2_add_severity,,60.0,95.0,95.0,95.0,100.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,full,ADD-PAR-C1,Inner_Core,5,5,G2_add_severity,V2>=0.1191,25.0,45.0,60.0,70.0,90.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,full,ADD-PAR-B2,Middle_Buffer,4,4,G2_add_severity,V2>=0.1253,35.0,75.0,80.0,95.0,90.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,full,ADD-PAR-P3,Outer_Periphery,0,0,,,55.0,100.0,100.0,100.0,95.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,no-G1-family,ADD-LAW-C1,Inner_Core,3,3,G2_add_severity,V2>=0.1198,5.0,20.0,25.0,35.0,95.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,no-G1-family,ADD-LAW-B2,Middle_Buffer,5,5,G2_add_severity,V2>=0.1259,30.0,65.0,80.0,90.0,85.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,no-G1-family,ADD-LAW-P3,Outer_Periphery,1,0,G2_add_severity,,60.0,95.0,95.0,95.0,100.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,no-G1-family,ADD-PAR-C1,Inner_Core,5,5,G2_add_severity,V2>=0.1191,25.0,45.0,60.0,70.0,90.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,no-G1-family,ADD-PAR-B2,Middle_Buffer,4,4,G2_add_severity,V2>=0.1253,35.0,75.0,80.0,95.0,90.0
+SYNTH_ADDITIVE,net_claim + (95 IF V2 >= 0.12 ELSE 60) * SEV - 1.10 * V3 + 0.20 * V4,no-G1-family,ADD-PAR-P3,Outer_Periphery,0,0,,,55.0,100.0,100.0,100.0,95.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),full,PRO-LAW-C1,Inner_Core,3,0,,,5.0,20.0,20.0,20.0,90.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),full,PRO-LAW-B2,Middle_Buffer,5,0,,,25.0,65.0,65.0,65.0,95.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),full,PRO-LAW-P3,Outer_Periphery,1,0,,,30.0,95.0,95.0,95.0,85.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),full,PRO-PAR-C1,Inner_Core,5,0,,,15.0,45.0,45.0,45.0,100.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),full,PRO-PAR-B2,Middle_Buffer,4,0,,,45.0,75.0,75.0,75.0,90.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),full,PRO-PAR-P3,Outer_Periphery,0,0,,,70.0,100.0,100.0,100.0,95.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),no-G1-family,PRO-LAW-C1,Inner_Core,3,0,,,5.0,20.0,20.0,20.0,90.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),no-G1-family,PRO-LAW-B2,Middle_Buffer,5,0,,,25.0,65.0,65.0,65.0,95.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),no-G1-family,PRO-LAW-P3,Outer_Periphery,1,0,,,30.0,95.0,95.0,95.0,85.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),no-G1-family,PRO-PAR-C1,Inner_Core,5,0,,,15.0,45.0,45.0,45.0,100.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),no-G1-family,PRO-PAR-B2,Middle_Buffer,4,0,,,45.0,75.0,75.0,75.0,90.0
+SYNTH_PRODUCT,net_claim * (1 - (0.50 IF V2 >= 0.12 ELSE 0.30) * SEV) * (1 + 0.40 * V3 / (V3 + V4)),no-G1-family,PRO-PAR-P3,Outer_Periphery,0,0,,,70.0,100.0,100.0,100.0,95.0

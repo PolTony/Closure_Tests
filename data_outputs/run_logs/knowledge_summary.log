@@ -1,0 +1,77 @@
+======================================================================================================================================================
+TABLE 14: THE KNOWLEDGE RACE — learning profession, by regime (periods 1, 8, 16; licensed and unlicensed occupations)
+======================================================================================================================================================
+Regime       | Group      |  t | T2 parity | Sen conv | Sen reg | Jun reg | Unknowing% | Unk err% | SQ err% | Oracle SQ% | Escal. | Defer
+------------------------------------------------------------------------------------------------------------------------------------------------------
+mandatory    | licensed   |  1 |      6.3% |   100.0% |  100.0% |    nan% |       0.0% |     0.0% |    3.3% |       3.3% |      0 |     0
+mandatory    | licensed   |  8 |     86.4% |   100.0% |  100.0% |   41.1% |       0.0% |     0.0% |    2.3% |       2.3% |      0 |     0
+mandatory    | licensed   | 16 |    100.0% |    99.9% |  100.0% |   37.4% |       0.0% |     0.0% |    2.9% |       2.9% |      0 |     0
+mandatory    | unlicensed |  1 |     15.5% |   100.0% |  100.0% |    nan% |       0.0% |     0.0% |    3.7% |       3.7% |      0 |     0
+mandatory    | unlicensed |  8 |    100.0% |   100.0% |  100.0% |   66.2% |       0.0% |     0.0% |    3.7% |       3.7% |      0 |     0
+mandatory    | unlicensed | 16 |    100.0% |   100.0% |  100.0% |   70.8% |       0.0% |     0.0% |    3.0% |       3.0% |      0 |     0
+discretion   | licensed   |  1 |      6.3% |   100.0% |  100.0% |    nan% |       0.0% |     0.0% |    3.3% |       3.3% |      0 |     0
+discretion   | licensed   |  8 |     65.3% |   100.0% |  100.0% |   40.6% |       0.0% |     0.0% |    2.3% |       2.3% |      0 |     0
+discretion   | licensed   | 16 |     73.8% |    99.8% |  100.0% |   34.7% |       0.0% |     0.0% |    2.9% |       2.9% |      0 |     0
+discretion   | unlicensed |  1 |     15.5% |   100.0% |  100.0% |    nan% |       0.0% |     0.0% |    3.7% |       3.7% |      0 |     0
+discretion   | unlicensed |  8 |     95.2% |   100.0% |  100.0% |   65.3% |       0.0% |     0.0% |    3.7% |       3.7% |      0 |     0
+discretion   | unlicensed | 16 |     88.6% |   100.0% |  100.0% |   69.2% |       0.0% |     0.0% |    3.0% |       3.0% |      0 |     0
+strategic    | licensed   |  1 |      6.3% |   100.0% |  100.0% |    nan% |       0.0% |     0.0% |    3.3% |       3.3% |      0 |     0
+strategic    | licensed   |  8 |     19.6% |   100.0% |  100.0% |   42.4% |       0.0% |     0.0% |    2.9% |       2.9% |      0 |     0
+strategic    | licensed   | 16 |     48.4% |    99.9% |   99.2% |   28.0% |       0.0% |     0.0% |    3.3% |       3.3% |      0 |     0
+strategic    | unlicensed |  1 |     15.5% |   100.0% |  100.0% |    nan% |       0.0% |     0.0% |    3.7% |       3.7% |      0 |     0
+strategic    | unlicensed |  8 |     54.0% |   100.0% |  100.0% |   65.3% |       0.0% |     0.0% |    4.5% |       4.5% |      0 |     0
+strategic    | unlicensed | 16 |     58.3% |   100.0% |  100.0% |   68.5% |       0.0% |     0.0% |    3.3% |       3.3% |      0 |     0
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Sen conv / Sen reg = share of seniors holding the convention / the registry at the start of the period; Jun reg = share of juniors holding the registry;
+Unknowing% = hard cases (Tiers 2 and 3) signed by a professional who lacked the component the case required, as a share of hard cases; Unk err% = errors among them;
+Oracle SQ% = status-quo error of the same regime with the registered (all-knowing) incumbent.
+
+================================================================================================================================================================
+TABLE 14b: WHERE KNOWLEDGE REPRODUCTION BREAKS — competence at promotion (periods 5-16), seniors' knowledge at period 16, and errors signed without the knowledge (periods 9-16)
+================================================================================================================================================================
+Run                                | Group      | Promoted | Hold conv | Hold reg | Sen conv 16 | Sen reg 16 | Unk conv% |  err% | Unk reg% |  err% | Core err% | T2 par 16
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+registered calibration, mandatory  | licensed   |     88.2 |     95.4% |   100.0% |       99.9% |     100.0% |      0.2% |  0.0% |     0.0% |  0.0% |      6.6% |    100.0%
+registered calibration, mandatory  | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+registered calibration, discretion | licensed   |     81.5 |     99.7% |   100.0% |       99.8% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      6.6% |     73.8%
+registered calibration, discretion | unlicensed |     47.8 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |     88.6%
+registered calibration, strategic  | licensed   |    109.0 |     99.7% |    98.6% |       99.9% |      99.2% |      0.0% |  0.0% |     0.0% |  0.0% |      8.1% |     48.4%
+registered calibration, strategic  | unlicensed |     75.1 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.9% |     58.3%
+learning twice as fast (kappa x0.5) | licensed   |     88.2 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      6.6% |    100.0%
+learning twice as fast (kappa x0.5) | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+learning slower (kappa x1.5)       | licensed   |     88.2 |     60.6% |    97.4% |       86.3% |      98.6% |      5.4% |  0.5% |     0.0% |  0.0% |      6.8% |    100.0%
+learning slower (kappa x1.5)       | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+learning twice as slow (kappa x2)  | licensed   |     88.2 |     37.7% |    88.1% |       77.9% |      93.4% |     10.1% |  0.5% |     1.0% |  1.0% |      7.3% |    100.0%
+learning twice as slow (kappa x2)  | unlicensed |     54.9 |     99.9% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+faster turnover (retirement 10%)   | licensed   |    142.0 |     34.2% |    99.7% |       69.8% |      99.6% |     14.4% |  0.6% |     0.0% |  0.0% |      6.8% |    100.0%
+faster turnover (retirement 10%)   | unlicensed |     96.5 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+faster demand growth (5%)          | licensed   |    153.0 |     48.2% |   100.0% |       81.0% |     100.0% |      8.7% |  0.5% |     0.0% |  0.0% |      6.8% |    100.0%
+faster demand growth (5%)          | unlicensed |    104.6 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+no escalation of precedent memos   | licensed   |     88.2 |     95.4% |   100.0% |       99.9% |     100.0% |      0.2% |  0.0% |     0.0% |  0.0% |      6.6% |    100.0%
+no escalation of precedent memos   | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+reviewers override instead of defer | licensed   |     88.2 |     95.4% |   100.0% |       99.9% |     100.0% |      0.2% |  0.2% |     0.0% |  0.0% |      6.6% |    100.0%
+reviewers override instead of defer | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+regulator feedback, mandatory      | licensed   |     64.9 |     97.5% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |     15.9% |    100.0%
+regulator feedback, mandatory      | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+regulator feedback, strategic      | licensed   |     99.2 |     99.7% |    98.5% |       99.9% |      99.2% |      0.0% |  0.0% |     0.0% |  0.0% |     11.4% |     48.4%
+regulator feedback, strategic      | unlicensed |     75.1 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.9% |     58.3%
+no statute anywhere (gates none)   | licensed   |     64.2 |     98.3% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |     21.2% |    100.0%
+no statute anywhere (gates none)   | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+statute everywhere (gates all)     | licensed   |     88.2 |     95.4% |   100.0% |       99.9% |     100.0% |      0.2% |  0.0% |     0.0% |  0.0% |      6.6% |    100.0%
+statute everywhere (gates all)     | unlicensed |     84.5 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      5.2% |    100.0%
+kappa x1.5, no statute anywhere    | licensed   |     64.2 |     83.2% |    98.4% |       94.9% |      99.1% |      1.9% |  0.2% |     0.0% |  0.0% |     21.3% |    100.0%
+kappa x1.5, no statute anywhere    | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+kappa x1.5, statute everywhere     | licensed   |     88.2 |     60.6% |    97.4% |       86.3% |      98.6% |      5.4% |  0.5% |     0.0% |  0.0% |      6.8% |    100.0%
+kappa x1.5, statute everywhere     | unlicensed |     84.5 |     99.6% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      5.2% |    100.0%
+thresholds on the period-1 pace    | licensed   |     88.2 |     95.7% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      6.6% |    100.0%
+thresholds on the period-1 pace    | unlicensed |     54.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.5% |    100.0%
+registered calibration, 32 periods | licensed   |    276.3 |     58.8% |   100.0% |       80.2% |     100.0% |      6.1% |  0.2% |     0.0% |  0.0% |      6.3% |    100.0%
+registered calibration, 32 periods | unlicensed |    161.8 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      7.7% |    100.0%
+fee-setting incumbent              | licensed   |     90.4 |     90.8% |   100.0% |       99.0% |     100.0% |      0.8% |  0.0% |     0.0% |  0.0% |      6.6% |    100.0%
+fee-setting incumbent              | unlicensed |     68.9 |    100.0% |   100.0% |      100.0% |     100.0% |      0.0% |  0.0% |     0.0% |  0.0% |      8.6% |    100.0%
+program replaces junior hours      | licensed   |     83.3 |     11.2% |    86.6% |       58.6% |      94.2% |     27.1% |  1.1% |     1.7% |  1.7% |      7.7% |    100.0%
+program replaces junior hours      | unlicensed |     49.0 |      6.2% |    95.5% |       57.1% |      97.9% |     27.3% |  0.5% |     0.0% |  0.0% |      7.6% |    100.0%
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Promoted = heads promoted over periods 5-16; Hold conv / Hold reg = head-weighted share of them who held the component at promotion;
+Unk conv% = convention cases signed by a professional who lacked the convention, as a share of convention cases (periods 9-16), and the errors among them as a share of convention cases;
+Unk reg% = the same for precedent cases and the registry; Core err% = inner-core status-quo error over periods 9-16 (the registered oracle gives 7.1% under mandatory disclosure).

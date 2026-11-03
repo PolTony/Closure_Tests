@@ -1,0 +1,24 @@
+Sourced attributes applied to 54 tasks; running the registered pipeline on them ...
+
+============================================================================================
+TABLE 12: REGISTERED CONSTANTS vs SOURCED CLOSURE ATTRIBUTES (extended corpus, 1,080 packets)
+============================================================================================
+Headline cell                | Registered |    Sourced |   Change
+--------------------------------------------------------------------------------------------
+Tool v3 end to end           |      81.02 |      81.02 |    +0.00
+Incumbent alone              |      90.65 |      90.65 |    +0.00
+Settlement                   |      99.35 |      98.15 |    -1.20
+Periphery poach              |      96.39 |      91.11 |    -5.28
+Buffer settle                |      55.28 |      42.50 |   -12.78
+Buffer gate                  |       7.50 |      10.28 |    +2.78
+Core poach                   |      21.67 |      33.89 |   +12.22
+Core settle                  |      44.72 |      31.67 |   -13.06
+Core gate                    |      33.61 |      34.44 |    +0.83
+Core SQ error                |       6.39 |      11.67 |    +5.28
+Core CF1 error               |      13.61 |      16.39 |    +2.78
+Core CF2 error               |      46.11 |      46.11 |    +0.00
+Mean shield gap (pp)         |      29.26 |      23.61 |    -5.65
+Mean d ln wage bill          |      -0.59 |      -0.42 |    +0.17
+--------------------------------------------------------------------------------------------
+Sourced: CPS licence share (unit level), OEWS 2024 wage over the all-occupations median, O*NET 27.0 accountability (native code),
+statutory gate = the programme's sign-off hand coding on core and buffer tasks. Outputs in data_outputs/sourced/.

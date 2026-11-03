@@ -1,0 +1,33 @@
+======================================================================================================================
+TABLE 8: LABORATORY MOMENTS AGAINST THE EMPIRICAL PROGRAM (exploratory, calibrated face-validity comparisons)
+======================================================================================================================
+Construct                                      | Lab (reference configuration)      | Empirical program (hand-off of 2026-10-31, data_inputs/empirical/)
+----------------------------------------------------------------------------------------------------------------------
+Within-occupation licence effect on uptake     | CF1 - SQ tool use = +0.00 pp (all 54 tasks: 0) | EU within-ISCO-4: +0.004 (SE 0.026); US states inconclusive
+  what the gate changes instead                | poach +13.0 pp, settle -13.0 pp, gate 0 | bodies issue subordination rules (80 rows) vs exclusion (9); who signs, not whether AI is used
+Between-occupation uptake, licensed vs not (raw) | 74.1% vs 90.3%                     | licensed occupations adopt less: -0.25 to -0.29 SD per SD of statutory licensing on the two Claude releases (knowledge work), -0.12 to -0.18 SD on Massenkoff and Microsoft (s631 full regression)
+  net of capability and accountability         | licence coef +0.018 (share); parity +0.49 | gap read as a property of the reserved work (content, liability), not the licence
+Sign-off layer: tool use vs overall            | Tier 3 22.1% vs all 85.5%: 74% below | within occupation, formal sign-off tasks show -73% on Massenkoff (t -4.95) and -53% on AEI June 2026 (t -1.70, wild-bootstrap p .089); pre-specified verdict PARTIAL (s547)
+Modal settlement in contested work             | settle 44.7% / gate 33.6% / poach 21.7% (core) | subordination is the modal institutional settlement; no exclusion except by statute
+Closure and the price of the work              | gate changes unit cost per task via who signs; no occupation wage in the model | no closure mechanism protects occupation pay (bounded within +/-0.02/SD, s605_closure); premiums intact in levels
+Incumbents and entry                           | incumbents retained as auditors (settle 45-55%); static reference; dynamic pipeline reported separately | incumbents retained, pay intact; hiring held up in licensed and unionized occupations; exposed occupations slow 3-5 lp/SD (s605, s628); the entrant-penalty evidence weakened in later audits (s462, s629)
+Silent errors and deregulation                 | CF1 raises core error 6.4% -> 13.6%; all silent collisions poached | untested: scope-of-practice designs uninformative (MDE 8-14 lp); prediction for future releases
+----------------------------------------------------------------------------------------------------------------------
+Reading: the laboratory reproduces the sign pattern of the program's robust facts (gate acts on who signs and on the
+sign-off layer, not on uptake within occupation; between-occupation uptake differences come from the content of reserved work;
+subordination is modal) under the iteratively developed reference configuration. It does not yet speak to wages, headcount, entry or incumbents' pay,
+in the reference configuration; the labour and apprenticeship block (Table 9, run_dynamics.py) is where those statements now live.
+
+======================================================================================================================
+TABLE 8b: UPTAKE NET OF EXPOSURE — WHEN EXPOSURE IS A TEXT LABEL vs WHEN IT IS MEASURED COMPILABILITY
+======================================================================================================================
+exposure construct                 | uptake slope | residual gap, licensed | residual gap, unlicensed | gap in SD units
+----------------------------------------------------------------------------------------------------------------------
+label exposure (share not overt Tier 3) |       +1.051 |                 +0.008 |                   -0.003 |           +0.74
+measured compilability (tool parity) |       +0.503 |                 +0.003 |                   -0.001 |           +0.16
+mean label exposure: licensed 0.74 vs unlicensed 0.91; mean compilability: 0.64 vs 0.88
+Reading: the hypothesis that the empirical adoption gap is an artefact of labelled exposure is NOT supported by the
+reference configuration. Net of a text-style label, licensed tasks use the tool slightly MORE than the label predicts (+0.7 SD),
+not less: overt precedent memos are visible to a rater, and silent collisions (42 of 1,080 packets) are too few to open a
+wedge between label and compilability. The wedge the hypothesis needs would require a larger share of reserved work that
+reads as routine. Empirical analogue to explain: licensed occupations adopt -0.4 to -0.7 SD below labelled exposure (E_g).

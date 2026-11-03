@@ -1,0 +1,21 @@
+REPLAY PROVENANCE: LEGACY replay: prompts matched, request configuration not verified; tool loops replayed as recorded events
+LLM arm: provider=replay model=claude-opus-5-5 effort=high/high roles=['compiler'] corpus=primary tasks=1 packets=20 estimated model calls=3
+  compiled LAW-C1: agentic: 6 tool turns, 4 candidates tested ; v3: candidate 3: 12/28 archive assertion failures; 71 source lines  [1s]
+  compiled 1 tasks in 1s; evaluating 20 packets with 1 workers
+  evaluated 20/20 packets [1s]
+
+================================================================================================================
+TABLE 6: RULE-BASED BASELINE vs LLM ARM (replay, claude-opus-5-5; roles=compiler; N = 20)
+================================================================================================================
+Regime                                     |    Novice b/a |   Tool_v3 b/a |  Inc_Solo b/a |    Collab b/a
+----------------------------------------------------------------------------------------------------------------
+Tier 0 routine (N=3)                       |    33.3/ 33.3 |   100.0/100.0 |   100.0/100.0 |   100.0/100.0
+Tier 1 explicit alert (N=1)                |     0.0/  0.0 |   100.0/100.0 |   100.0/100.0 |   100.0/100.0
+Tier 2 piecewise collision (N=3)           |     0.0/  0.0 |   100.0/  0.0 |    66.7/ 66.7 |   100.0/100.0
+Tier 3 precedent collision (N=13)          |     0.0/  0.0 |     0.0/  0.0 |    92.3/ 92.3 |   100.0/100.0
+Silent collisions (N=4)                    |     0.0/  0.0 |     0.0/  0.0 |   100.0/100.0 |   100.0/100.0
+All packets (N=20)                         |     5.0/  5.0 |    35.0/ 20.0 |    90.0/ 90.0 |   100.0/100.0
+----------------------------------------------------------------------------------------------------------------
+Inner_Core       governance baseline poach/settle/gate =  0.0/55.0/45.0  arm =  0.0/55.0/45.0  SQ error baseline/arm =  5.0/ 5.0
+
+REPLAY PROVENANCE: {"provenance": "LEGACY replay: prompts matched, request configuration not verified; tool loops replayed as recorded events", "replay_mode": "legacy", "transcript": "data_outputs/llm_transcripts_agentic.jsonl", "tool_events_reexecuted": 6, "prompt_mismatches": [], "ambiguous_tool_loop_starts": []}

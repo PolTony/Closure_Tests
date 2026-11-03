@@ -1,0 +1,5 @@
+Variant                        | silent n | detected | false alarm | overt flagged | v3 correct | v3 correct | flag
+registered_disjoint_support    |       16 |   100.0% |       17.2% |         52.5% |       0.0% |              0.0%
+decoy_notes_0.25               |       16 |    50.0% |       19.2% |         52.5% |       0.0% |              0.0%
+routine_metric_overlap         |       16 |    37.5% |       19.2% |         52.5% |       0.0% |              0.0%
+wrote data_outputs/anomaly_detection.csv. Detection by a public support detector; resolution by the v3 compiled tool.

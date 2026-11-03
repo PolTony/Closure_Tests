@@ -1,0 +1,83 @@
+  LAW-C1 done (Paralegals, corpus)
+  LAW-B2 done (Paralegals, corpus)
+  LAW-P3 done (Paralegals, corpus)
+  PAR-C1 done (Paralegals_assistant, generic)
+  PAR-B2 done (Paralegals_assistant, generic)
+  PAR-P3 done (Paralegals_assistant, generic)
+  CPA-C1 done (Accountants_Auditors_assistant, generic)
+  CPA-B2 done (Accountants_Auditors_assistant, generic)
+  CPA-P3 done (Accountants_Auditors_assistant, generic)
+  FIN-C1 done (Financial_Analysts_assistant, generic)
+  FIN-B2 done (Financial_Analysts_assistant, generic)
+  FIN-P3 done (Financial_Analysts_assistant, generic)
+  NP-C1 done (Registered_Nurses, corpus)
+  NP-B2 done (Registered_Nurses, corpus)
+  NP-P3 done (Registered_Nurses, corpus)
+  SQA-C1 done (Software_QA_Analysts_assistant, generic)
+  SQA-B2 done (Software_QA_Analysts_assistant, generic)
+  SQA-P3 done (Software_QA_Analysts_assistant, generic)
+  OPS-C1 done (Operations_Managers_assistant, generic)
+  OPS-B2 done (Operations_Managers_assistant, generic)
+  OPS-P3 done (Operations_Managers_assistant, generic)
+  MGT-C1 done (Management_Analysts_assistant, generic)
+  MGT-B2 done (Management_Analysts_assistant, generic)
+  MGT-P3 done (Management_Analysts_assistant, generic)
+  PSY-C1 done (Clinical_Counseling_Psychologists_assistant, generic)
+  PSY-B2 done (Clinical_Counseling_Psychologists_assistant, generic)
+  PSY-P3 done (Clinical_Counseling_Psychologists_assistant, generic)
+  RN-C1 done (Registered_Nurses_assistant, generic)
+  RN-B2 done (Registered_Nurses_assistant, generic)
+  RN-P3 done (Registered_Nurses_assistant, generic)
+  SYS-C1 done (Systems_Analysts_assistant, generic)
+  SYS-B2 done (Systems_Analysts_assistant, generic)
+  SYS-P3 done (Systems_Analysts_assistant, generic)
+  TAX-C1 done (Tax_Examiners_Revenue_Agents_assistant, generic)
+  TAX-B2 done (Tax_Examiners_Revenue_Agents_assistant, generic)
+  TAX-P3 done (Tax_Examiners_Revenue_Agents_assistant, generic)
+  ECO-C1 done (Economists_assistant, generic)
+  ECO-B2 done (Economists_assistant, generic)
+  ECO-P3 done (Economists_assistant, generic)
+  ENG-C1 done (Civil_Engineers_assistant, generic)
+  ENG-B2 done (Civil_Engineers_assistant, generic)
+  ENG-P3 done (Civil_Engineers_assistant, generic)
+  ARC-C1 done (Architects_assistant, generic)
+  ARC-B2 done (Architects_assistant, generic)
+  ARC-P3 done (Architects_assistant, generic)
+  EDU-C1 done (Business_Teachers_Postsecondary_assistant, generic)
+  EDU-B2 done (Business_Teachers_Postsecondary_assistant, generic)
+  EDU-P3 done (Business_Teachers_Postsecondary_assistant, generic)
+  HRS-C1 done (HR_Specialists_assistant, generic)
+  HRS-B2 done (HR_Specialists_assistant, generic)
+  HRS-P3 done (HR_Specialists_assistant, generic)
+  SEC-C1 done (Executive_Secretaries_assistant, generic)
+  SEC-B2 done (Executive_Secretaries_assistant, generic)
+  SEC-P3 done (Executive_Secretaries_assistant, generic)
+
+======================================================================================================================================================
+TABLE 10: BUMPING CHAINS — two professions per task; arrangement shares and hours by ring and tool wave (v0 = before any tool)
+======================================================================================================================================================
+Ring             | wave |          POACH |     SETTLE_INC |           GATE |      SUB_ALONE | SUB_SUPERVISED |     SETTLE_SUB | Inc hrs | Sub hrs | Error
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Outer_Periphery  |   v0 |           0.0% |           0.0% |           0.0% |         100.0% |           0.0% |           0.0% |    n/a |    100 | 11.7%
+Outer_Periphery  |   v1 |          97.2% |           0.0% |           0.0% |           2.8% |           0.0% |           0.0% |    n/a |      3 |  0.3%
+Outer_Periphery  |   v2 |          97.5% |           0.0% |           0.0% |           2.5% |           0.0% |           0.0% |    n/a |      2 |  0.0%
+Outer_Periphery  |   v3 |          97.5% |           0.0% |           0.0% |           2.5% |           0.0% |           0.0% |    n/a |      2 |  0.0%
+Middle_Buffer    |   v0 |           0.0% |           0.0% |           5.6% |          94.4% |           0.0% |           0.0% |    100 |    100 | 17.5%
+Middle_Buffer    |   v1 |          68.9% |           0.0% |           2.2% |          28.9% |           0.0% |           0.0% |     73 |     27 |  5.6%
+Middle_Buffer    |   v2 |          80.3% |          10.8% |           0.8% |           6.7% |           0.0% |           1.4% |     88 |      2 |  5.6%
+Middle_Buffer    |   v3 |          80.3% |          10.8% |           0.8% |           6.7% |           0.0% |           1.4% |     88 |      2 |  2.2%
+Inner_Core       |   v0 |           0.0% |           0.0% |           5.6% |          94.4% |           0.0% |           0.0% |    100 |    100 | 19.2%
+Inner_Core       |   v1 |          43.6% |           0.0% |           3.1% |          53.3% |           0.0% |           0.0% |     93 |     42 | 18.6%
+Inner_Core       |   v2 |          50.8% |          14.7% |           2.2% |          31.4% |           0.0% |           0.8% |    102 |     11 | 17.2%
+Inner_Core       |   v3 |          50.8% |          14.7% |           2.2% |          31.4% |           0.0% |           0.8% |    102 |     11 | 13.9%
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Inc hrs / Sub hrs = incumbent and subordinate hours per packet, indexed to 100 at wave v0 (the pre-tool division of labour); n/a when v0 hours are zero.
+
+Who loses first (hours at v3 as a share of hours at v0):
+  Outer_Periphery  incumbent   n/a (no pre-tool hours)   subordinate     2%
+  Middle_Buffer    incumbent    88%   subordinate     2%
+  Inner_Core       incumbent   102%   subordinate    11%
+
+Named pairs (hours at v3 as a share of v0):
+  Lawyers / Paralegals: incumbent   100%   subordinate    11%
+  Nurse_Practitioners / Registered_Nurses: incumbent    34%   subordinate     5%

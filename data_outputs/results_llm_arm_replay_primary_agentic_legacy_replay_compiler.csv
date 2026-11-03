@@ -1,0 +1,2 @@
+task_id,ring,archive_n,v1_archive_failures,v2_archive_failures,v3_archive_failures,v1_halstead,v2_halstead,v3_halstead,log
+LAW-C1,Inner_Core,28,28,28,12,336.0,466.0,2052.9,"agentic: 6 tool turns, 4 candidates tested | v3: candidate 3: 12/28 archive assertion failures; 71 source lines"

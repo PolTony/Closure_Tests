@@ -1,0 +1,4 @@
+scope,n_requests,served_primary,served_other,explicit_fallback_events,fallback_field_absent,non_primary_without_fallback_event,input_tokens,output_tokens,model_seconds,roles
+selected_reported_run,774,761,13,12,3,1,1845125,554150,5841.6,"{""compiler_v1"": 18, ""compiler_v2"": 18, ""compiler_v3"": 18, ""critic"": 180, ""incumbent"": 180, ""incumbent_collab"": 180, ""novice"": 180}"
+file_records_not_requested,20,19,1,0,20,1,76665,141000,1364.3,"{""compiler_v1"": 2, ""compiler_v2"": 2, ""compiler_v3"": 2, ""critic"": 4, ""incumbent"": 2, ""incumbent_collab"": 4, ""novice"": 4}"
+whole_transcript_file,794,780,14,12,23,2,1921790,695150,7205.9,"{""compiler_v1"": 20, ""compiler_v2"": 20, ""compiler_v3"": 20, ""critic"": 184, ""incumbent"": 182, ""incumbent_collab"": 184, ""novice"": 184}"

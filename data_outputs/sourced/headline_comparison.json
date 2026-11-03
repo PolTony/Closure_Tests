@@ -1,0 +1,34 @@
+{
+ "registered": {
+  "Tool v3 end to end": 81.01851851851852,
+  "Incumbent alone": 90.64814814814815,
+  "Settlement": 99.35185185185185,
+  "Periphery poach": 96.38888888888889,
+  "Buffer settle": 55.27777777777778,
+  "Buffer gate": 7.5,
+  "Core poach": 21.666666666666668,
+  "Core settle": 44.72222222222222,
+  "Core gate": 33.611111111111114,
+  "Core SQ error": 6.388888888888889,
+  "Core CF1 error": 13.61111111111111,
+  "Core CF2 error": 46.111111111111114,
+  "Mean shield gap (pp)": 29.25925925925926,
+  "Mean d ln wage bill": -0.5920333333333333
+ },
+ "sourced": {
+  "Tool v3 end to end": 81.01851851851852,
+  "Incumbent alone": 90.64814814814815,
+  "Settlement": 98.14814814814815,
+  "Periphery poach": 91.11111111111111,
+  "Buffer settle": 42.5,
+  "Buffer gate": 10.277777777777779,
+  "Core poach": 33.888888888888886,
+  "Core settle": 31.666666666666668,
+  "Core gate": 34.44444444444444,
+  "Core SQ error": 11.666666666666666,
+  "Core CF1 error": 16.38888888888889,
+  "Core CF2 error": 46.111111111111114,
+  "Mean shield gap (pp)": 23.61111111111111,
+  "Mean d ln wage bill": -0.4213962962962963
+ }
+}

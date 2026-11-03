@@ -1,0 +1,4 @@
+variant,overrides,n_silent,n_routine,n_overt,detect_silent_pct,false_alarm_routine_pct,flag_overt_pct,v3_correct_silent_pct,v3_correct_given_flag_pct
+registered_disjoint_support,{},16,203,141,100.0,17.2,52.5,0.0,0.0
+decoy_notes_0.25,{'decoy_note_rate': 0.25},16,203,141,50.0,19.2,52.5,0.0,0.0
+routine_metric_overlap,"{'gen_routine_metric_range': (0.12, 0.91)}",16,203,141,37.5,19.2,52.5,0.0,0.0

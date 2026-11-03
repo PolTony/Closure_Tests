@@ -1,0 +1,8 @@
+role,calls,median_seconds,mean_output_tokens,served_non_primary,explicit_fallback_events
+compiler_v1,18,11.8,1414,6,5
+compiler_v2,18,40.0,4094,3,3
+compiler_v3,18,43.2,4440,3,3
+critic,180,3.0,229,0,0
+incumbent,180,6.4,578,0,0
+incumbent_collab,180,7.3,752,1,1
+novice,180,5.2,525,0,0

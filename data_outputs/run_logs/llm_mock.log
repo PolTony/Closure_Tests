@@ -1,0 +1,47 @@
+LLM arm: provider=mock model=claude-opus-5-5 effort=high/medium roles=['compiler', 'novice', 'incumbent', 'critic'] corpus=primary tasks=18 packets=360 estimated model calls=1494
+  compiled LAW-C1: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 8 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 12/28 failures; annex key='severity_index'; template G1_mult_severity with B=net_claim, X=V3, Y=V4, coefs=(0.52, -1.2, 0.15), consensus 8/12 ; v3: residual 4/12 on 'severity_index'; stump V2 < 0.1114 separates 12/12; residual-side coefs=(0.36, -1.2, 0.15), consensus 4/4  [0s]
+  compiled LAW-B2: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 20/72 failures; annex key='severity_index'; template G1_mult_severity with B=net_claim, X=V3, Y=V4, coefs=(0.36, -1.2, 0.15), consensus 10/20 ; v3: residual 10/20 on 'severity_index'; stump V2 >= 0.1168 separates 20/20; residual-side coefs=(0.52, -1.2, 0.15), consensus 10/10  [0s]
+  compiled LAW-P3: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler ; v3: 4/80 residual failures but no learned handler to refine; no repair  [0s]
+  compiled PAR-C1: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 20/56 failures; annex key='severity_index'; template G1_mult_severity with B=net_claim, X=V3, Y=V4, coefs=(0.52, -1.2, 0.15), consensus 12/20 ; v3: residual 8/20 on 'severity_index'; stump V2 < 0.1121 separates 20/20; residual-side coefs=(0.36, -1.2, 0.15), consensus 8/8  [0s]
+  compiled PAR-B2: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 16/76 failures; annex key='severity_index'; template G1_mult_severity with B=net_claim, X=V3, Y=V4, coefs=(0.52, -1.2, 0.15), consensus 10/16 ; v3: residual 6/16 on 'severity_index'; stump V2 < 0.1162 separates 16/16; residual-side coefs=(0.36, -1.2, 0.15), consensus 6/6  [1s]
+  compiled PAR-P3: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 0/80 assertion failures on the public archive; no repair needed ; v3: 0/80 assertion failures on the public archive; no repair needed  [1s]
+  compiled CPA-C1: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 7 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 16/36 failures; annex key='severity_index'; template G1_mult_severity with B=allocated_rev, X=V3, Y=V4, coefs=(0.34, -1.25, 0.1), consensus 9/16 ; v3: residual 7/16 on 'severity_index'; stump V2 >= 0.1237 separates 16/16; residual-side coefs=(0.48, -1.25, 0.1), consensus 7/7  [1s]
+  compiled CPA-B2: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 20/72 failures; annex key='severity_index'; template G1_mult_severity with B=allocated_rev, X=V3, Y=V4, coefs=(0.48, -1.25, 0.1), consensus 10/20 ; v3: residual 10/20 on 'severity_index'; stump V2 < 0.1052 separates 20/20; residual-side coefs=(0.34, -1.25, 0.1), consensus 10/10  [1s]
+  compiled CPA-P3: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler ; v3: 4/80 residual failures but no learned handler to refine; no repair  [1s]
+  compiled FIN-C1: v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 20/48 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.45, -1.18, 0.12), consensus 14/20 ; v3: residual 6/20 on 'severity_index'; stump V2 < 0.1177 separates 20/20; residual-side coefs=(0.3, -1.18, 0.12), consensus 6/6  [2s]
+  compiled FIN-B2: v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 20/76 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.45, -1.18, 0.12), consensus 11/20 ; v3: residual 9/20 on 'severity_index'; stump V2 < 0.1058 separates 20/20; residual-side coefs=(0.3, -1.18, 0.12), consensus 9/9  [2s]
+  compiled FIN-P3: v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 0/80 assertion failures on the public archive; no repair needed ; v3: 0/80 assertion failures on the public archive; no repair needed  [2s]
+  compiled NP-C1: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 8 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 12/28 failures; annex key='severity_index'; template G1_mult_severity with B=cleared_base, X=V3, Y=V4, coefs=(0.4, -1.22, 0.08), consensus 6/12 ; v3: residual 6/12 on 'severity_index'; stump V2 >= 0.1192 separates 12/12; residual-side coefs=(0.56, -1.22, 0.08), consensus 6/6  [2s]
+  compiled NP-B2: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 20/68 failures; annex key='severity_index'; template G1_mult_severity with B=cleared_base, X=V3, Y=V4, coefs=(0.4, -1.22, 0.08), consensus 12/20 ; v3: residual 8/20 on 'severity_index'; stump V2 >= 0.1218 separates 20/20; residual-side coefs=(0.56, -1.22, 0.08), consensus 8/8  [3s]
+  compiled NP-P3: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler ; v3: 4/80 residual failures but no learned handler to refine; no repair  [3s]
+  compiled SQA-C1: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 24/56 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.28, -1.18, 0.1), consensus 15/24 ; v3: residual 9/24 on 'severity_index'; stump V2 >= 0.13 separates 24/24; residual-side coefs=(0.44, -1.18, 0.1), consensus 9/9  [3s]
+  compiled SQA-B2: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 3 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 16/80 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.28, -1.18, 0.1), consensus 13/16 ; v3: residual 3/16 on 'severity_index'; best stump V2 >= 0.1322 separates 16/16; residual-side refit consensus 3 < required 4; no refinement  [3s]
+  compiled SQA-P3: v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4'] ; v2: 0/80 assertion failures on the public archive; no repair needed ; v3: 0/80 assertion failures on the public archive; no repair needed  [3s]
+  compiled 18 tasks in 3s; evaluating 360 packets with 1 workers
+  evaluated 40/360 packets [3s]
+  evaluated 80/360 packets [3s]
+  evaluated 120/360 packets [3s]
+  evaluated 160/360 packets [3s]
+  evaluated 200/360 packets [3s]
+  evaluated 240/360 packets [3s]
+  evaluated 280/360 packets [3s]
+  evaluated 320/360 packets [3s]
+  evaluated 360/360 packets [3s]
+
+================================================================================================================
+TABLE 6: RULE-BASED BASELINE vs LLM ARM (mock, rule-based stand-in; roles=compiler,novice,incumbent,critic; N = 360)
+================================================================================================================
+Regime                                     |    Novice b/a |   Tool_v3 b/a |  Inc_Solo b/a |    Collab b/a
+----------------------------------------------------------------------------------------------------------------
+Tier 0 routine (N=203)                     |    66.0/ 66.0 |   100.0/100.0 |    91.6/ 91.6 |   100.0/100.0
+Tier 1 explicit alert (N=34)               |     0.0/  0.0 |   100.0/100.0 |    82.4/ 82.4 |   100.0/100.0
+Tier 2 piecewise collision (N=57)          |     0.0/  0.0 |    91.2/ 91.2 |    82.5/ 82.5 |   100.0/100.0
+Tier 3 precedent collision (N=66)          |     0.0/  0.0 |     0.0/  0.0 |    92.4/ 92.4 |    97.0/ 97.0
+Silent collisions (N=16)                   |     0.0/  0.0 |     0.0/  0.0 |   100.0/100.0 |    87.5/ 87.5
+All packets (N=360)                        |    37.2/ 37.2 |    80.3/ 80.3 |    89.4/ 89.4 |    99.4/ 99.4
+----------------------------------------------------------------------------------------------------------------
+Outer_Periphery  governance baseline poach/settle/gate = 95.8/ 1.7/ 2.5  arm = 95.8/ 1.7/ 2.5  SQ error baseline/arm =  0.0/ 0.0
+Middle_Buffer    governance baseline poach/settle/gate = 34.2/58.3/ 7.5  arm = 34.2/58.3/ 7.5  SQ error baseline/arm =  1.7/ 1.7
+Inner_Core       governance baseline poach/settle/gate = 20.0/45.8/34.2  arm = 20.0/45.8/34.2  SQ error baseline/arm =  6.7/ 6.7
+
+mock protocol test: PASS (arm reproduces the rule-based baseline exactly)

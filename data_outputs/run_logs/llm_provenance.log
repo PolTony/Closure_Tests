@@ -1,0 +1,10 @@
+   {'role': 'compiler_v1', 'calls': 18, 'median_seconds': 11.8, 'mean_output_tokens': 1414, 'served_non_primary': 6, 'explicit_fallback_events': 5}
+   {'role': 'compiler_v2', 'calls': 18, 'median_seconds': 40.0, 'mean_output_tokens': 4094, 'served_non_primary': 3, 'explicit_fallback_events': 3}
+   {'role': 'compiler_v3', 'calls': 18, 'median_seconds': 43.2, 'mean_output_tokens': 4440, 'served_non_primary': 3, 'explicit_fallback_events': 3}
+   {'role': 'critic', 'calls': 180, 'median_seconds': 3.0, 'mean_output_tokens': 229, 'served_non_primary': 0, 'explicit_fallback_events': 0}
+   {'role': 'incumbent', 'calls': 180, 'median_seconds': 6.4, 'mean_output_tokens': 578, 'served_non_primary': 0, 'explicit_fallback_events': 0}
+   {'role': 'incumbent_collab', 'calls': 180, 'median_seconds': 7.3, 'mean_output_tokens': 752, 'served_non_primary': 1, 'explicit_fallback_events': 1}
+   {'role': 'novice', 'calls': 180, 'median_seconds': 5.2, 'mean_output_tokens': 525, 'served_non_primary': 0, 'explicit_fallback_events': 0}
+selected_reported_run: n=774 primary=761 other=13 fallback_events=12 roles={'compiler_v1': 18, 'compiler_v2': 18, 'compiler_v3': 18, 'critic': 180, 'incumbent': 180, 'incumbent_collab': 180, 'novice': 180} tokens in/out=1845125/554150 seconds=5841.6
+file_records_not_requested: n=20 primary=19 other=1 fallback_events=0 roles={'compiler_v1': 2, 'compiler_v2': 2, 'compiler_v3': 2, 'critic': 4, 'incumbent': 2, 'incumbent_collab': 4, 'novice': 4} tokens in/out=76665/141000 seconds=1364.3
+whole_transcript_file: n=794 primary=780 other=14 fallback_events=12 roles={'compiler_v1': 20, 'compiler_v2': 20, 'compiler_v3': 20, 'critic': 184, 'incumbent': 182, 'incumbent_collab': 184, 'novice': 184} tokens in/out=1921790/695150 seconds=7205.9

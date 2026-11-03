@@ -1,0 +1,16 @@
+soc2018,occ_title,family,task_id,ring,A_Base_Pct,A_Tool_v1_Pct,A_Tool_v2_Pct,A_Tool_v3_Pct,A_Inc_Solo_Pct,A_Collab_Pct,Direct_Poaching_Pct,Accountability_Settlement_Pct,Incumbent_Gatekeeping_Pct,SQ_Error_Rate_Pct,CF1_Dereg_Error_Pct,v2_handler_template,v3_split
+29-1051,Pharmacists,PHARMACY,PHA-C1,Inner_Core,10.0,30.0,45.0,55.0,90.0,100.0,0.0,65.0,35.0,0.0,10.0,G1_mult_severity,V2>=0.1421
+29-1051,Pharmacists,PHARMACY,PHA-B2,Middle_Buffer,40.0,70.0,85.0,95.0,85.0,100.0,0.0,95.0,5.0,5.0,5.0,G1_mult_severity,V2>=0.1392
+29-1051,Pharmacists,PHARMACY,PHA-P3,Outer_Periphery,60.0,95.0,95.0,95.0,90.0,100.0,85.0,10.0,5.0,0.0,0.0,,
+29-1215,Family Medicine Physicians,FAMMED,FAM-C1,Inner_Core,5.0,30.0,45.0,55.0,90.0,100.0,0.0,65.0,35.0,5.0,15.0,G1_mult_severity,V2>=0.1377
+29-1215,Family Medicine Physicians,FAMMED,FAM-B2,Middle_Buffer,45.0,70.0,80.0,95.0,85.0,100.0,0.0,95.0,5.0,0.0,0.0,G1_mult_severity,V2>=0.1348
+29-1215,Family Medicine Physicians,FAMMED,FAM-P3,Outer_Periphery,40.0,95.0,95.0,95.0,95.0,100.0,85.0,10.0,5.0,0.0,0.0,,
+29-1021,"Dentists, General",DENTAL,DEN-C1,Inner_Core,10.0,30.0,40.0,50.0,90.0,100.0,0.0,65.0,35.0,5.0,15.0,G1_mult_severity,V2>=0.1257
+29-1021,"Dentists, General",DENTAL,DEN-B2,Middle_Buffer,45.0,70.0,75.0,95.0,95.0,100.0,0.0,95.0,5.0,0.0,0.0,G1_mult_severity,V2>=0.1286
+29-1021,"Dentists, General",DENTAL,DEN-P3,Outer_Periphery,50.0,95.0,95.0,95.0,85.0,100.0,85.0,10.0,5.0,0.0,0.0,,
+17-2071,Electrical Engineers,ELEC,ELE-C1,Inner_Core,10.0,30.0,50.0,55.0,90.0,90.0,0.0,65.0,35.0,10.0,10.0,G1_mult_severity,V2>=0.1473
+17-2071,Electrical Engineers,ELEC,ELE-B2,Middle_Buffer,30.0,70.0,85.0,95.0,80.0,100.0,0.0,95.0,5.0,0.0,0.0,G1_mult_severity,V2>=0.1537
+17-2071,Electrical Engineers,ELEC,ELE-P3,Outer_Periphery,50.0,95.0,95.0,95.0,90.0,100.0,95.0,0.0,5.0,0.0,0.0,,
+17-1022,Surveyors,SURVEY,SUR-C1,Inner_Core,5.0,30.0,45.0,55.0,95.0,95.0,0.0,65.0,35.0,5.0,10.0,G1_mult_severity,V2>=0.1288
+17-1022,Surveyors,SURVEY,SUR-B2,Middle_Buffer,30.0,70.0,75.0,95.0,95.0,100.0,0.0,95.0,5.0,0.0,0.0,G1_mult_severity,V2>=0.1441
+17-1022,Surveyors,SURVEY,SUR-P3,Outer_Periphery,55.0,95.0,95.0,95.0,85.0,100.0,85.0,10.0,5.0,0.0,0.0,,

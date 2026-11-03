@@ -1,0 +1,272 @@
+{
+  "LAW-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 8 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 12/28 failures; annex key='severity_index'; template G1_mult_severity with B=net_claim, X=V3, Y=V4, coefs=(0.52, -1.2, 0.15), consensus 8/12",
+    "v3: residual 4/12 on 'severity_index'; stump V2 < 0.1114 separates 12/12; residual-side coefs=(0.36, -1.2, 0.15), consensus 4/4"
+  ],
+  "LAW-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/72 failures; annex key='severity_index'; template G1_mult_severity with B=net_claim, X=V3, Y=V4, coefs=(0.36, -1.2, 0.15), consensus 10/20",
+    "v3: residual 10/20 on 'severity_index'; stump V2 >= 0.1168 separates 20/20; residual-side coefs=(0.52, -1.2, 0.15), consensus 10/10"
+  ],
+  "LAW-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "PAR-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/56 failures; annex key='severity_index'; template G1_mult_severity with B=net_claim, X=V3, Y=V4, coefs=(0.52, -1.2, 0.15), consensus 12/20",
+    "v3: residual 8/20 on 'severity_index'; stump V2 < 0.1121 separates 20/20; residual-side coefs=(0.36, -1.2, 0.15), consensus 8/8"
+  ],
+  "PAR-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/76 failures; annex key='severity_index'; template G1_mult_severity with B=net_claim, X=V3, Y=V4, coefs=(0.52, -1.2, 0.15), consensus 10/16",
+    "v3: residual 6/16 on 'severity_index'; stump V2 < 0.1162 separates 16/16; residual-side coefs=(0.36, -1.2, 0.15), consensus 6/6"
+  ],
+  "PAR-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 0/80 assertion failures on the public archive; no repair needed",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ],
+  "CPA-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 7 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/36 failures; annex key='severity_index'; template G1_mult_severity with B=allocated_rev, X=V3, Y=V4, coefs=(0.34, -1.25, 0.1), consensus 9/16",
+    "v3: residual 7/16 on 'severity_index'; stump V2 >= 0.1237 separates 16/16; residual-side coefs=(0.48, -1.25, 0.1), consensus 7/7"
+  ],
+  "CPA-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/72 failures; annex key='severity_index'; template G1_mult_severity with B=allocated_rev, X=V3, Y=V4, coefs=(0.48, -1.25, 0.1), consensus 10/20",
+    "v3: residual 10/20 on 'severity_index'; stump V2 < 0.1052 separates 20/20; residual-side coefs=(0.34, -1.25, 0.1), consensus 10/10"
+  ],
+  "CPA-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "FIN-C1": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/48 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.45, -1.18, 0.12), consensus 14/20",
+    "v3: residual 6/20 on 'severity_index'; stump V2 < 0.1177 separates 20/20; residual-side coefs=(0.3, -1.18, 0.12), consensus 6/6"
+  ],
+  "FIN-B2": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/76 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.45, -1.18, 0.12), consensus 11/20",
+    "v3: residual 9/20 on 'severity_index'; stump V2 < 0.1058 separates 20/20; residual-side coefs=(0.3, -1.18, 0.12), consensus 9/9"
+  ],
+  "FIN-P3": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 0/80 assertion failures on the public archive; no repair needed",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ],
+  "NP-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 8 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 12/28 failures; annex key='severity_index'; template G1_mult_severity with B=cleared_base, X=V3, Y=V4, coefs=(0.4, -1.22, 0.08), consensus 6/12",
+    "v3: residual 6/12 on 'severity_index'; stump V2 >= 0.1192 separates 12/12; residual-side coefs=(0.56, -1.22, 0.08), consensus 6/6"
+  ],
+  "NP-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/68 failures; annex key='severity_index'; template G1_mult_severity with B=cleared_base, X=V3, Y=V4, coefs=(0.4, -1.22, 0.08), consensus 12/20",
+    "v3: residual 8/20 on 'severity_index'; stump V2 >= 0.1218 separates 20/20; residual-side coefs=(0.56, -1.22, 0.08), consensus 8/8"
+  ],
+  "NP-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "SQA-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 24/56 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.28, -1.18, 0.1), consensus 15/24",
+    "v3: residual 9/24 on 'severity_index'; stump V2 >= 0.13 separates 24/24; residual-side coefs=(0.44, -1.18, 0.1), consensus 9/9"
+  ],
+  "SQA-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 3 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/80 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.28, -1.18, 0.1), consensus 13/16",
+    "v3: residual 3/16 on 'severity_index'; best stump V2 >= 0.1322 separates 16/16; residual-side refit consensus 3 < required 4; no refinement"
+  ],
+  "SQA-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 0/80 assertion failures on the public archive; no repair needed",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ],
+  "OPS-C1": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/44 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.45, -1.18, 0.12), consensus 10/20",
+    "v3: residual 10/20 on 'severity_index'; stump V2 < 0.1235 separates 20/20; residual-side coefs=(0.3, -1.18, 0.12), consensus 10/10"
+  ],
+  "OPS-B2": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/72 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.3, -1.18, 0.12), consensus 11/20",
+    "v3: residual 9/20 on 'severity_index'; stump V2 >= 0.125 separates 20/20; residual-side coefs=(0.45, -1.18, 0.12), consensus 9/9"
+  ],
+  "OPS-P3": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 4/80 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.45, -1.18, 0.12), consensus 4/4",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ],
+  "MGT-C1": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 24/56 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.3, -1.18, 0.12), consensus 17/24",
+    "v3: residual 7/24 on 'severity_index'; stump V2 >= 0.1181 separates 24/24; residual-side coefs=(0.45, -1.18, 0.12), consensus 7/7"
+  ],
+  "MGT-B2": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/76 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.3, -1.18, 0.12), consensus 10/16",
+    "v3: residual 6/16 on 'severity_index'; stump V2 >= 0.1259 separates 16/16; residual-side coefs=(0.45, -1.18, 0.12), consensus 6/6"
+  ],
+  "MGT-P3": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 0/80 assertion failures on the public archive; no repair needed",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ],
+  "PSY-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 7 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 12/28 failures; annex key='severity_index'; template G1_mult_severity with B=cleared_base, X=V3, Y=V4, coefs=(0.56, -1.22, 0.08), consensus 7/12",
+    "v3: residual 5/12 on 'severity_index'; stump V2 < 0.1226 separates 12/12; residual-side coefs=(0.4, -1.22, 0.08), consensus 5/5"
+  ],
+  "PSY-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/68 failures; annex key='severity_index'; template G1_mult_severity with B=cleared_base, X=V3, Y=V4, coefs=(0.56, -1.22, 0.08), consensus 11/20",
+    "v3: residual 9/20 on 'severity_index'; stump V2 < 0.1237 separates 20/20; residual-side coefs=(0.4, -1.22, 0.08), consensus 9/9"
+  ],
+  "PSY-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "RN-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 7 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/36 failures; annex key='severity_index'; template G1_mult_severity with B=cleared_base, X=V3, Y=V4, coefs=(0.56, -1.22, 0.08), consensus 9/16",
+    "v3: residual 7/16 on 'severity_index'; stump V2 < 0.1192 separates 16/16; residual-side coefs=(0.4, -1.22, 0.08), consensus 7/7"
+  ],
+  "RN-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/72 failures; annex key='severity_index'; template G1_mult_severity with B=cleared_base, X=V3, Y=V4, coefs=(0.56, -1.22, 0.08), consensus 10/20",
+    "v3: residual 10/20 on 'severity_index'; stump V2 < 0.1152 separates 20/20; residual-side coefs=(0.4, -1.22, 0.08), consensus 10/10"
+  ],
+  "RN-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "SYS-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/52 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.44, -1.18, 0.1), consensus 12/20",
+    "v3: residual 8/20 on 'severity_index'; stump V2 < 0.1152 separates 20/20; residual-side coefs=(0.28, -1.18, 0.1), consensus 8/8"
+  ],
+  "SYS-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/76 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.44, -1.18, 0.1), consensus 8/16",
+    "v3: residual 8/16 on 'severity_index'; stump V2 < 0.1221 separates 16/16; residual-side coefs=(0.28, -1.18, 0.1), consensus 8/8"
+  ],
+  "SYS-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 0/80 assertion failures on the public archive; no repair needed",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ],
+  "TAX-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/40 failures; annex key='severity_index'; template G1_mult_severity with B=allocated_rev, X=V3, Y=V4, coefs=(0.34, -1.25, 0.1), consensus 8/16",
+    "v3: residual 8/16 on 'severity_index'; stump V2 >= 0.1177 separates 16/16; residual-side coefs=(0.48, -1.25, 0.1), consensus 8/8"
+  ],
+  "TAX-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 24/76 failures; annex key='severity_index'; template G1_mult_severity with B=allocated_rev, X=V3, Y=V4, coefs=(0.48, -1.25, 0.1), consensus 14/24",
+    "v3: residual 10/24 on 'severity_index'; stump V2 < 0.1218 separates 24/24; residual-side coefs=(0.34, -1.25, 0.1), consensus 10/10"
+  ],
+  "TAX-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "ECO-C1": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 7 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/44 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.45, -1.18, 0.12), consensus 12/20",
+    "v3: residual 8/20 on 'severity_index'; stump V2 < 0.1205 separates 20/20; residual-side coefs=(0.3, -1.18, 0.12), consensus 8/8"
+  ],
+  "ECO-B2": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/72 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.3, -1.18, 0.12), consensus 10/20",
+    "v3: residual 10/20 on 'severity_index'; stump V2 >= 0.1257 separates 20/20; residual-side coefs=(0.45, -1.18, 0.12), consensus 10/10"
+  ],
+  "ECO-P3": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "ENG-C1": [
+    "v1: compiled from public handbook: 4 LET, 2 DIAGNOSE, 3 RULE, 8 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 12/28 failures; annex key='severity_index'; template G1_mult_severity with B=lrfd_envelope, X=V3, Y=V4, coefs=(0.38, -1.25, 0.14), consensus 9/12",
+    "v3: residual 3/12 on 'severity_index'; best stump V2 >= 0.1245 separates 12/12; residual-side refit consensus 3 < required 4; no refinement"
+  ],
+  "ENG-B2": [
+    "v1: compiled from public handbook: 4 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/68 failures; annex key='severity_index'; template G1_mult_severity with B=lrfd_envelope, X=V3, Y=V4, coefs=(0.38, -1.25, 0.14), consensus 13/20",
+    "v3: residual 7/20 on 'severity_index'; stump V2 >= 0.1117 separates 20/20; residual-side coefs=(0.54, -1.25, 0.14), consensus 7/7"
+  ],
+  "ENG-P3": [
+    "v1: compiled from public handbook: 4 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "ARC-C1": [
+    "v1: compiled from public handbook: 4 LET, 2 DIAGNOSE, 3 RULE, 7 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/36 failures; annex key='severity_index'; template G1_mult_severity with B=lrfd_envelope, X=V3, Y=V4, coefs=(0.38, -1.25, 0.14), consensus 10/16",
+    "v3: residual 6/16 on 'severity_index'; stump V2 >= 0.1166 separates 16/16; residual-side coefs=(0.54, -1.25, 0.14), consensus 6/6"
+  ],
+  "ARC-B2": [
+    "v1: compiled from public handbook: 4 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/72 failures; annex key='severity_index'; template G1_mult_severity with B=lrfd_envelope, X=V3, Y=V4, coefs=(0.38, -1.25, 0.14), consensus 12/20",
+    "v3: residual 8/20 on 'severity_index'; stump V2 >= 0.1166 separates 20/20; residual-side coefs=(0.54, -1.25, 0.14), consensus 8/8"
+  ],
+  "ARC-P3": [
+    "v1: compiled from public handbook: 4 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: key='severity_index': 4 labelled failures; no template reached its required consensus; no handler",
+    "v3: 4/80 residual failures but no learned handler to refine; no repair"
+  ],
+  "EDU-C1": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 6 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/52 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.3, -1.18, 0.12), consensus 10/20",
+    "v3: residual 10/20 on 'severity_index'; stump V2 >= 0.1081 separates 20/20; residual-side coefs=(0.45, -1.18, 0.12), consensus 10/10"
+  ],
+  "EDU-B2": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 20/76 failures; annex key='severity_index'; template G1_mult_severity with B=dcf_core, X=V3, Y=V4, coefs=(0.45, -1.18, 0.12), consensus 15/20",
+    "v3: residual 5/20 on 'severity_index'; stump V2 < 0.1237 separates 20/20; residual-side coefs=(0.3, -1.18, 0.12), consensus 5/5"
+  ],
+  "EDU-P3": [
+    "v1: compiled from public handbook: 3 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 0/80 assertion failures on the public archive; no repair needed",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ],
+  "HRS-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 5 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 24/56 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.28, -1.18, 0.1), consensus 13/24",
+    "v3: residual 11/24 on 'severity_index'; stump V2 >= 0.1244 separates 24/24; residual-side coefs=(0.44, -1.18, 0.1), consensus 11/11"
+  ],
+  "HRS-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/80 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.44, -1.18, 0.1), consensus 11/16",
+    "v3: residual 5/16 on 'severity_index'; stump V2 < 0.1243 separates 16/16; residual-side coefs=(0.28, -1.18, 0.1), consensus 5/5"
+  ],
+  "HRS-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 0/80 assertion failures on the public archive; no repair needed",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ],
+  "SEC-C1": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 4 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 24/64 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.44, -1.18, 0.1), consensus 10/24",
+    "v3: residual 14/24 on 'severity_index'; stump V2 < 0.1169 separates 24/24; residual-side coefs=(0.28, -1.18, 0.1), consensus 14/14"
+  ],
+  "SEC-B2": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 2 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 16/80 failures; annex key='severity_index'; template G1_mult_severity with B=queue_throughput, X=V3, Y=V4, coefs=(0.44, -1.18, 0.1), consensus 8/16",
+    "v3: residual 8/16 on 'severity_index'; stump V2 < 0.1129 separates 16/16; residual-side coefs=(0.28, -1.18, 0.1), consensus 8/8"
+  ],
+  "SEC-P3": [
+    "v1: compiled from public handbook: 2 LET, 2 DIAGNOSE, 3 RULE, 1 CHECK statements; fields=['ANNEX_SEVERITY', 'V1', 'V2', 'V3', 'V4']",
+    "v2: 0/80 assertion failures on the public archive; no repair needed",
+    "v3: 0/80 assertion failures on the public archive; no repair needed"
+  ]
+}

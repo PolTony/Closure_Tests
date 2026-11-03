@@ -1,0 +1,26 @@
+Family           Grammar       Task     Ring             |    v1 |    v2 |    v3 |   Inc | template
+SYNTH_ADDITIVE   full          ADD-LAW-C1 Inner_Core       |   20% |   25% |   35% |   95% | G2_add_severity
+SYNTH_ADDITIVE   full          ADD-LAW-B2 Middle_Buffer    |   65% |   80% |   90% |   85% | G2_add_severity
+SYNTH_ADDITIVE   full          ADD-LAW-P3 Outer_Periphery  |   95% |   95% |   95% |  100% | G2_add_severity
+SYNTH_ADDITIVE   full          ADD-PAR-C1 Inner_Core       |   45% |   60% |   70% |   90% | G2_add_severity
+SYNTH_ADDITIVE   full          ADD-PAR-B2 Middle_Buffer    |   75% |   80% |   95% |   90% | G2_add_severity
+SYNTH_ADDITIVE   full          ADD-PAR-P3 Outer_Periphery  |  100% |  100% |  100% |   95% | 
+SYNTH_ADDITIVE   no-G1-family  ADD-LAW-C1 Inner_Core       |   20% |   25% |   35% |   95% | G2_add_severity
+SYNTH_ADDITIVE   no-G1-family  ADD-LAW-B2 Middle_Buffer    |   65% |   80% |   90% |   85% | G2_add_severity
+SYNTH_ADDITIVE   no-G1-family  ADD-LAW-P3 Outer_Periphery  |   95% |   95% |   95% |  100% | G2_add_severity
+SYNTH_ADDITIVE   no-G1-family  ADD-PAR-C1 Inner_Core       |   45% |   60% |   70% |   90% | G2_add_severity
+SYNTH_ADDITIVE   no-G1-family  ADD-PAR-B2 Middle_Buffer    |   75% |   80% |   95% |   90% | G2_add_severity
+SYNTH_ADDITIVE   no-G1-family  ADD-PAR-P3 Outer_Periphery  |  100% |  100% |  100% |   95% | 
+SYNTH_PRODUCT    full          PRO-LAW-C1 Inner_Core       |   20% |   20% |   20% |   90% | 
+SYNTH_PRODUCT    full          PRO-LAW-B2 Middle_Buffer    |   65% |   65% |   65% |   95% | 
+SYNTH_PRODUCT    full          PRO-LAW-P3 Outer_Periphery  |   95% |   95% |   95% |   85% | 
+SYNTH_PRODUCT    full          PRO-PAR-C1 Inner_Core       |   45% |   45% |   45% |  100% | 
+SYNTH_PRODUCT    full          PRO-PAR-B2 Middle_Buffer    |   75% |   75% |   75% |   90% | 
+SYNTH_PRODUCT    full          PRO-PAR-P3 Outer_Periphery  |  100% |  100% |  100% |   95% | 
+SYNTH_PRODUCT    no-G1-family  PRO-LAW-C1 Inner_Core       |   20% |   20% |   20% |   90% | 
+SYNTH_PRODUCT    no-G1-family  PRO-LAW-B2 Middle_Buffer    |   65% |   65% |   65% |   95% | 
+SYNTH_PRODUCT    no-G1-family  PRO-LAW-P3 Outer_Periphery  |   95% |   95% |   95% |   85% | 
+SYNTH_PRODUCT    no-G1-family  PRO-PAR-C1 Inner_Core       |   45% |   45% |   45% |  100% | 
+SYNTH_PRODUCT    no-G1-family  PRO-PAR-B2 Middle_Buffer    |   75% |   75% |   75% |   90% | 
+SYNTH_PRODUCT    no-G1-family  PRO-PAR-P3 Outer_Periphery  |  100% |  100% |  100% |   95% | 
+wrote data_outputs/structural_challenge.csv; synthetic fixtures, not occupations

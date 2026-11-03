@@ -1,0 +1,6 @@
+condition,overrides,tier3_overt_n,tier3_overt_v3_correct,tier3_silent_n,tier3_silent_v3_correct,tier2_v3,tier3_v2,tier3_v3,e2e_v3,handlers,winners
+"registered: Tier 3 withheld, grammar full, 2-dp grid",{},148,0,42,0,91.5,0.0,0.0,81.0,37,{'G1_mult_severity': 37}
+"Tier 3 archived, grammar full (no interaction template), 2-dp",{'archive_includes_tier3': True},148,0,42,0,91.5,0.0,0.0,81.0,37,{'G1_mult_severity': 37}
+"Tier 3 archived, grammar full+G5, 2-dp grid","{'archive_includes_tier3': True, 'grammar': 'full+G5'}",148,0,42,0,91.5,0.0,0.0,81.0,37,{'G1_mult_severity': 37}
+"Tier 3 archived, grammar full+G5, 4-dp grid","{'archive_includes_tier3': True, 'grammar': 'full+G5', 'coef_decimals': 4}",148,138,42,0,86.4,72.6,72.6,93.0,38,"{'G5_mult_severity_interaction': 14, 'G1_mult_severity': 23, 'G3_mult_severity_one_field': 1}"
+"Tier 3 archived, full+G5, 4-dp, archive 320","{'archive_includes_tier3': True, 'grammar': 'full+G5', 'coef_decimals': 4, 'archive_size': 320}",148,146,42,0,97.7,76.8,76.8,95.6,46,"{'G5_mult_severity_interaction': 14, 'G1_mult_severity': 30, 'G4_free_base': 2}"
